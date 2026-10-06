@@ -1,0 +1,11 @@
+# Maps for the appendix. For each entry tools/maps.py (or your own drawing) must produce
+#   assets/maps/map-<id>.jpg           the Loremaster version (numbered, secrets)
+#   assets/maps/map-<id>-players.jpg   the player version (optional; set players = false to omit)
+# Loremaster maps come after the item cards, player maps before the letter handouts.
+# See tools/maps.py for the drawing engine; `python3 tools/maps.py example` draws a sample.
+
+# [[maps]]
+# id = "example"
+# title = "The Example"
+# subtitle = "numbers as in Part 1"
+# players = true

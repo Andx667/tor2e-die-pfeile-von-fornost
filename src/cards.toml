@@ -1,0 +1,25 @@
+# Item cards (appendix). One card per physical copy; order = `order`. Six cards per A4 page.
+# Rules terms from `terms` are set in italics on the cards automatically.
+# An empty `order` list means: no card appendix at all.
+
+hint = "Cut out, poker card size (63 × 88 mm)"
+footer = ""
+order = ["example"]
+
+terms = [
+  "Famous Weapon", "Famous Armour", "Marvellous Artefact", "Core Rules", "Cunning Make",
+  "Blessings", "Blessing", "Banes", "Bane", "Keen", "Fell", "Grievous", "Reinforced",
+  "Damage", "Injury", "Load", "Protection", "Parry", "Shadow", "Hope", "Endurance",
+  "Sword", "Bow", "Axe", "Shield",
+]
+
+# Placeholder: replace it, or delete it and empty `order` for an adventure without cards.
+[cards.example]
+name = "Example Card"
+kind = "Famous Weapon · Sword · Made by Dwarves"
+stats = "As a Core Rules sword"
+stats_note = "base stats"
+text = "Placeholder text."
+effects = [
+  ["Effect", "Keen"],
+]

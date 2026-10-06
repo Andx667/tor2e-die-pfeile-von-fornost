@@ -1,0 +1,11 @@
+# Everything adventure-specific that is not text. Edit this first when you start a new adventure.
+
+title = "Adventure Title"
+short_title = "Adventure Title"      # running head and footer
+subtitle = "An adventure for The One Ring, 2nd Edition · Region, Season TA Year"
+tagline = "An adventure for the Region"   # GitHub social preview (tools/social.py)
+edition = "English print edition"
+author = "Your Name"
+license = "MIT License"
+language = "english"                 # "english" or "german" (babel, labels such as Notes/Notizen)
+file_name = "Adventure-Title-TOR2e-EN"   # base name of the PDFs

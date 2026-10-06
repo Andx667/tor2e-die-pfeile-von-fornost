@@ -1,0 +1,18 @@
+% Content of both editions (tor2e.tex: sheet edition, tor2e-buch.tex: book edition).
+% Everything in build/ is produced by tools/build.py.
+\fwtitle{\advTitle}{\advSubtitle}
+
+\input{build/body.tex}
+
+% ---- Appendix: item cards (from src/cards.toml)
+\input{build/cards.tex}
+
+% ---- Loremaster maps (landscape, from src/maps.toml)
+\input{build/maps-lm.tex}
+
+\label{fw-lastnum}
+
+% ---- Player handouts: maps and letters (letters come from the ::: letter blocks in src/adventure.md)
+\input{build/maps-players.tex}
+\input{build/letters.tex}
+\input{build/handouts.tex}

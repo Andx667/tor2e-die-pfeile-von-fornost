@@ -1,0 +1,392 @@
+% tor2e.sty - layout for The One Ring 2e adventures (print edition)
+% LuaLaTeX (CI) or XeLaTeX (local fallback). Left margin 26 mm for hole punching, notes column on the right,
+% footer with version and date on every page. All adventure-specific text comes from build/meta.tex.
+% Option 'book' (latex/tor2e-buch.tex): a book block for binding - double-sided, the 26 mm become the
+% inner margin, notes column, running head and page number outside; landscape pages are turned
+% upright so that all pages have the same size.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tor2e}[2026/10/06 TOR 2e adventure layout]
+
+\newif\iffw@book
+\DeclareOption{book}{\fw@booktrue}
+\ProcessOptions\relax
+
+% ---------------------------------------------------------------- Pakete
+\iffw@book\PassOptionsToPackage{twoside}{geometry}\fi
+\RequirePackage[a4paper,top=16mm,bottom=18mm,left=26mm,right=14mm,nohead,nofoot]{geometry}
+\RequirePackage{fontspec}
+\RequirePackage{iftex}
+\RequirePackage{etoolbox}
+\RequirePackage[table]{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{longtable,array,booktabs}
+\RequirePackage{enumitem}
+\RequirePackage{titlesec}
+\RequirePackage{eso-pic}
+\RequirePackage{ragged2e}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows.meta}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage[protrusion=true]{microtype}
+\ifLuaTeX\microtypesetup{expansion=true}\fi
+
+% English edition: English hyphenation patterns, justified text
+\newif\iffw@hyph
+\RequirePackage[\advLang]{babel}\fw@hyphtrue
+\RequirePackage[hidelinks,bookmarksopen=true,bookmarksopenlevel=0,
+  pdfpagemode=UseOutlines]{hyperref}
+\AtBeginDocument{\hypersetup{pdftitle={\advTitle},pdfsubject={\advSubtitle},pdfauthor={\advAuthor}}}
+\RequirePackage{bookmark}
+
+% ---------------------------------------------------------------- Farben
+\definecolor{fwink}{HTML}{2B2420}
+\definecolor{fwstrong}{HTML}{1D1714}
+\definecolor{fwred}{HTML}{7A2A1F}
+\definecolor{fwgrey}{HTML}{6F665C}
+\definecolor{fwline}{HTML}{9A9088}
+\definecolor{fwparch}{HTML}{F7F1E6}
+\definecolor{fwparchdark}{HTML}{EFE3C6}
+\definecolor{fwparchedge}{HTML}{D8C296}
+\definecolor{fwgold}{HTML}{B89C6C}
+\definecolor{fwboxbg}{HTML}{F3EADB}
+\definecolor{fwnoterule}{HTML}{D2C9BE}
+\definecolor{fwnotesep}{HTML}{CFC6BC}
+\definecolor{fwhline}{HTML}{D6C3BC}
+\definecolor{fwthead}{HTML}{EFE7E2}
+\definecolor{fwrowline}{HTML}{DDD4CB}
+\definecolor{fwcardline}{HTML}{D8CBB2}
+\definecolor{fwletterink}{HTML}{3A2716}
+
+% ---------------------------------------------------------------- Schriften
+\setmainfont{texgyrepagella}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold,
+  ItalicFont=*-italic, BoldItalicFont=*-bolditalic, Ligatures=TeX]
+\newfontfamily\fwchorus{texgyrechorus-mediumitalic}[Extension=.otf]
+\renewcommand\normalsize{\fontsize{10}{14.2}\selectfont}
+\renewcommand\small{\fontsize{8.3}{10.8}\selectfont}
+\normalsize
+\color{fwink}
+% Hervorhebung bleibt auch in kursivem Umfeld kursiv (wie in der HTML-Fassung)
+\renewcommand\emph[1]{\textit{#1}}
+\let\fw@textbf\textbf
+\renewcommand\textbf[1]{\fw@textbf{\color{fwstrong}#1}}
+
+% ---------------------------------------------------------------- Absätze
+\setlength\parindent{0pt}
+\setlength\parskip{2.2mm plus 0.6mm minus 0.2mm}
+\clubpenalty=10000 \widowpenalty=10000 \displaywidowpenalty=10000
+\setlength\emergencystretch{2.5em}% nie über den Rand hinaus, lieber etwas lockerer
+\raggedbottom
+% Mit Trennmustern Blocksatz; ohne (lokaler Ersatz) Flattersatz, der nie überläuft
+\newcommand\fw@ragged{\iffw@hyph\RaggedRight\else\raggedright\fi}
+\iffw@hyph\else\AtBeginDocument{\raggedright}\fi
+\pagestyle{empty}
+\setlist{leftmargin=5mm,topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=1.4mm}
+\setlist[itemize]{label={\small\textbullet}}
+\providecommand\tightlist{}
+\renewcommand\tightlist{}
+\setcounter{secnumdepth}{0}
+
+% Zwischenüberschriften (### im Markdown)
+\titleformat{\subsection}{\fontsize{11.5}{14}\selectfont\scshape\addfontfeature{LetterSpace=3}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{2.6mm}{0.2mm}
+
+% ---------------------------------------------------------------- Seitenzustand
+\newif\iffwnotes
+\newif\iffw@first
+\newif\iffw@started
+\gdef\fwcurrent{}
+\gdef\fwpagekind{normal}   % normal | lm (Loremaster-Karte, quer) | handout (quer) | blank (Buch: ohne Fußzeile) | fill (Buch: Notizseite)
+% Buchfassung: left/right heißen innen/außen; auf linken (geraden) Seiten ist alles gespiegelt
+\newif\iffw@left
+\newcommand\fw@setside{\fw@leftfalse\iffw@book\ifodd\c@page\else\fw@lefttrue\fi\fi}
+\def\fw@geometry#1{%
+  \ifstrequal{#1}{notes}
+    {\global\fwnotestrue\newgeometry{top=16mm,bottom=18mm,left=26mm,right=76mm,nohead,nofoot}}
+    {\global\fwnotesfalse\newgeometry{top=16mm,bottom=18mm,left=26mm,right=14mm,nohead,nofoot}}}
+
+% ---------------------------------------------------------------- Titel und Kapitel
+\newcommand\fwtitle[2]{%
+  \noindent\begin{minipage}[b]{\dimexpr\linewidth-24mm\relax}%
+    {\fontsize{24}{27}\selectfont\bfseries\color{fwred}#1\par}%
+    \vspace{1mm}{\itshape\color{fwgrey}#2\par}%
+  \end{minipage}\hfill
+  \includegraphics[height=20mm]{assets/logo-print.png}\par
+  \vspace{2.5mm}{\color{fwred}\hrule height 1.2pt}\vspace{2mm}}
+
+\newcommand\fw@heading[1]{%
+  {\fontsize{15}{18}\selectfont\bfseries\color{fwred}#1\par}%
+  \nobreak\vspace{1mm}{\color{fwhline}\hrule height 0.6pt}\nobreak\vspace{0.3mm}\nobreak}
+
+% \fwchapter{notes|nonotes}{label}{Titel (LaTeX)}{Titel (Lesezeichen)}
+\newcommand\fwchapter[4]{%
+  \iffw@started
+    \clearpage\fw@geometry{#1}%
+  \else
+    \global\fw@startedtrue
+    \ifstrequal{#1}{notes}{\global\fwnotestrue}{\global\fwnotesfalse}%
+  \fi
+  \global\fw@firsttrue
+  \gdef\fwcurrent{#3}%
+  \phantomsection\pdfbookmark[0]{#4}{bm-#2}\label{#2}%
+  \fw@heading{#3}}
+
+% ---------------------------------------------------------------- Kopf, Fuß, Notizspalte
+\newcommand\fw@at[3]{\put(#1,#2){\makebox(0,0)[#3]}}
+\newcommand\fw@footerfont{\fontsize{8}{10}\selectfont\color{fwgrey}}
+
+\newcommand\fw@noteslines[2]{% Zeilen-x, Zeilenbreite
+  \put(#1,276){\makebox(0,0)[lb]{\fontsize{9}{10}\selectfont\scshape\addfontfeature{LetterSpace=8}\color{fwgrey}\advStrNotes}}%
+  {\color{fwnoterule}\linethickness{0.25pt}\multiput(#1,266)(0,-7){36}{\line(1,0){#2}}}}
+\newcommand\fw@notescolumn[2]{% Trennlinie-x, Zeilen-x
+  \put(#1,18){\color{fwnotesep}\linethickness{0.6pt}\line(0,1){263}}%
+  \fw@noteslines{#2}{50}}
+% Buchfassung: ganze Notizseite (Füllseiten am Ende), Bundsteg innen
+\newcommand\fw@notespage{%
+  \fw@setside
+  \edef\fw@notesx{\iffw@left 14\else 26\fi}%
+  \fw@noteslines{\fw@notesx}{170}}
+
+\newcommand\fw@headtext[2]{\fontsize{8}{10}\selectfont\scshape\addfontfeature{LetterSpace=12}\color{#1}#2}
+\newcommand\fw@runninghead{% Kapitel steht außen
+  \iffw@left
+    \put(14,287){\makebox(0,0)[lb]{\fw@headtext{fwred}{\fwcurrent}}}%
+    \put(184,287){\makebox(0,0)[rb]{\fw@headtext{fwgrey}{\advTitleShort}}}%
+    \put(14,285.6){\color{fwhline}\linethickness{0.5pt}\line(1,0){170}}%
+  \else
+    \put(26,287){\makebox(0,0)[lb]{\fw@headtext{fwgrey}{\advTitleShort}}}%
+    \put(196,287){\makebox(0,0)[rb]{\fw@headtext{fwred}{\fwcurrent}}}%
+    \put(26,285.6){\color{fwhline}\linethickness{0.5pt}\line(1,0){170}}%
+  \fi}
+
+\newcommand\fw@pageno{\thepage\ / \pageref*{fw-lastnum}}
+\newcommand\fw@footer[3]{% links-x, mitte-x, rechts-x; Seitenzahl steht außen
+  \put(#1,7){\makebox(0,0)[lb]{\fw@footerfont\iffw@left\fw@pageno\else \advTitleShort{} · TOR 2e\fi}}%
+  \put(#2,7){\makebox(0,0)[b]{\fontsize{7.5}{9}\selectfont\color{fwgrey}\advStrVersion{} \fwversion\ · \advStrDate{} \fwstand\ · \advCredit}}%
+  \put(#3,7){\makebox(0,0)[rb]{\fw@footerfont\iffw@left \advTitleShort{} · TOR 2e\else\fw@pageno\fi}}}
+
+\newcommand\fw@bgportrait{%
+  \fw@setside
+  \iffw@left
+    \iffwnotes\fw@notescolumn{68}{14}\fi
+    \iffw@first\else\ifx\fwcurrent\@empty\else\fw@runninghead\fi\fi
+    \fw@footer{14}{105}{184}%
+  \else
+    \iffwnotes\fw@notescolumn{142}{146}\fi
+    \iffw@first\else\ifx\fwcurrent\@empty\else\fw@runninghead\fi\fi
+    \fw@footer{26}{105}{196}%
+  \fi}
+\newcommand\fw@bglandscape{%
+  \fw@leftfalse
+  \ifdefstring{\fwpagekind}{handout}{%
+    \put(285,5){\makebox(0,0)[rb]{\fontsize{6.5}{8}\selectfont\color{fwline}\advStrVersion{} \fwversion\ · \advStrDate{} \fwstand\ · \advCredit}}%
+  }{\fw@footer{14}{148.5}{283}}}
+
+% Buchfassung: Querseite (297 × 210 mm) um 90° gedreht auf die Hochformatseite, Kopf nach
+% links. Auf 93 % verkleinert; die gewonnenen 14,7 mm liegen innen am Bund.
+\newcommand\fw@rotated[1]{%
+  \fw@setside
+  \edef\fw@rotx{\iffw@left 0\else 14.7\fi}%
+  \put(\fw@rotx,10.4){\scalebox{0.93}{\rotatebox{90}{%
+    \begin{picture}(297,210)#1\end{picture}}}}}
+\newcommand\fw@landpic[1]{\iffw@book\fw@rotated{#1}\else#1\fi}
+
+\AddToShipoutPictureBG{%
+  \setlength\unitlength{1mm}%
+  \ifdefstring{\fwpagekind}{blank}{}{%
+    \ifdefstring{\fwpagekind}{fill}{\fw@notespage}{%
+      \iffw@book
+        \ifdefstring{\fwpagekind}{normal}{\fw@bgportrait}{\fw@rotated{\fw@bglandscape}}%
+      \else
+        \ifdim\paperwidth>\paperheight\fw@bglandscape\else\fw@bgportrait\fi
+      \fi}}%
+  \global\fw@firstfalse}
+
+% ---------------------------------------------------------------- Kästen
+\tcbset{
+  fw base/.style={enhanced, colback=fwboxbg, colframe=fwboxbg, boxrule=0pt,
+    sharp corners, borderline west={2pt}{0pt}{fwred}, left=3mm, right=3mm, top=1.8mm,
+    bottom=1.6mm, boxsep=0pt, before skip=2mm, after skip=2.5mm, parbox=false,
+    fontupper=\fontsize{9.2}{12.5}\selectfont,
+    before upper={\setlength\parskip{1.6mm}\setlist{itemsep=0.8mm,topsep=-0.6mm}}},
+  fw split/.style={breakable},
+  fw rule/.style={breakable, colframe=fwgold, boxrule=0.8pt},
+}
+\newtcolorbox{fwbox}[1][]{fw base,#1}
+
+% „Skippable“/„Optional“-Pille: \fwskip{Text}
+\newcommand\fwskip[1]{\tcbox[on line, colback=fwgrey, colframe=fwgrey, boxrule=0pt, arc=1mm,
+  left=1.3mm, right=1.3mm, top=0.15mm, bottom=0.35mm, boxsep=0pt, nobeforeafter, tcbox raise base]{%
+  \fontsize{8.5}{9}\selectfont\scshape\addfontfeature{LetterSpace=4}\color{white}#1}}
+
+% ---------------------------------------------------------------- Tabellen
+\newcolumntype{P}[1]{>{\fw@ragged\arraybackslash}p{\dimexpr#1\linewidth-2\tabcolsep\relax}}
+\newcolumntype{B}[1]{>{\fw@ragged\arraybackslash\bfseries}p{\dimexpr#1\linewidth-2\tabcolsep\relax}}
+\newcommand\fwth[1]{\textcolor{fwred}{\bfseries #1}}
+\newcommand\fwheadrule{\arrayrulecolor{fwred}\specialrule{0.8pt}{0pt}{0pt}}
+\newcommand\fwrowrule{\arrayrulecolor{fwrowline}\specialrule{0.4pt}{0pt}{0pt}}
+\newenvironment{fwtable}[1]{%
+  \par\vspace{0.6mm}%
+  \ifstrequal{#1}{small}{\small}{\normalsize}%
+  \setlength\tabcolsep{1.6mm}\renewcommand\arraystretch{1.3}%
+  \setlength\LTpre{0pt}\setlength\LTpost{2mm}}{\par}
+
+% ---------------------------------------------------------------- Karten im Text
+\newcommand\fwmap[2]{%
+  \par\vspace{1mm}\noindent
+  \begin{minipage}{\linewidth}
+    \centering\includegraphics[width=0.78\linewidth]{#1}\par\vspace{1.2mm}
+    {\fw@ragged\fontsize{8.5}{11}\selectfont\itshape\color{fwgrey}#2\par}
+  \end{minipage}\par\vspace{2mm}}
+
+% ---------------------------------------------------------------- Brief im Text
+\newtcolorbox{fwletter}{colback=fwparch, colframe=fwcardline, boxrule=0.6pt, sharp corners,
+  left=4mm, right=4mm, top=3mm, bottom=3mm, boxsep=0pt, before skip=2mm, after skip=3mm,
+  fontupper=\itshape\fontsize{10}{15.5}\selectfont}
+\newcommand\fwsig[1]{\hspace*{\fill}#1}
+
+% ---------------------------------------------------------------- Inhalt auf Seite 1
+\newcommand\fw@idx[2]{%
+  \hyperref[#2]{\hbox to\linewidth{#1\ \leaders\hbox to 1.4mm{\hss\textcolor{fwline}{.}\hss}\hfill\ \textcolor{fwred}{\pageref*{#2}}}}\par}
+\newcommand\fwidx[2]{\fw@idx{#1}{#2}}
+\newcommand\fwindex{%
+  \par\vspace{2mm}%
+  \begingroup\setlength\parskip{0pt}\fontsize{10}{15}\selectfont
+  \textbf{\advStrContents:}\par\vspace{1mm}
+  \noindent
+  \begin{minipage}[t]{\dimexpr0.5\linewidth-6mm\relax}
+    \input{build/index-left.tex}
+  \end{minipage}\hspace{12mm}%
+  \begin{minipage}[t]{\dimexpr0.5\linewidth-6mm\relax}
+    \input{build/index-right.tex}
+  \end{minipage}\par
+  \endgroup}
+
+% ---------------------------------------------------------------- Gegenstandskarten (63 × 88 mm)
+\tcbset{
+  fw card/.style={enhanced, width=59.8mm, height=84.8mm, colback=fwparch, colframe=fwgold,
+    boxrule=0.9pt, arc=2mm, left=2.8mm, right=2.8mm, top=2.6mm, bottom=1.8mm, boxsep=0pt,
+    space to upper, middle=1.2mm, lower separated=true,
+    segmentation style={draw=fwcardline, line width=0.5pt, solid},
+    fontupper=\fontsize{8}{10.2}\selectfont\fw@ragged,
+    fontlower=\fontsize{7}{8.5}\selectfont\itshape\color{fwgrey}\fw@ragged,
+    before upper={\setlength\parskip{0pt}}},
+  fw stats/.style={colback=fwparchdark, colframe=fwparchdark, boxrule=0pt, arc=1mm,
+    left=2mm, right=2mm, top=0.8mm, bottom=0.8mm, boxsep=0pt, before skip=0pt, after skip=1.8mm,
+    fontupper=\bfseries\fontsize{8.8}{11}\selectfont\fw@ragged},
+}
+\newsavebox\fw@cardbox
+\newcommand\fwcardname[1]{{\fontsize{12}{13.8}\selectfont\bfseries\color{fwred}#1\par}}
+\newcommand\fwcardkind[1]{\vspace{0.6mm}{\itshape\color{fwgrey}#1\par}\vspace{1.4mm}{\color{fwcardline}\hrule height 0.5pt}\vspace{1.8mm}}
+\newcommand\fwcardstats[2]{\begin{tcolorbox}[fw stats]#1\ifblank{#2}{}{ {\mdseries\itshape\fontsize{7.2}{9}\selectfont\color{fwgrey}(#2)}}\end{tcolorbox}}
+\newcommand\fwcardtext[1]{#1\par\vspace{1.8mm}}
+\newenvironment{fwcardeffects}{\begin{itemize}[leftmargin=3.6mm,itemsep=0.9mm,label={\textbullet}]}{\end{itemize}}
+% Karten je Reihe: Blattfassung 3 × 2 je Seite; Buchfassung 2 × 3, damit die Karten in
+% Originalgröße neben den Bundsteg passen
+\iffw@book\def\fw@cardcols{2}\else\def\fw@cardcols{3}\fi
+\newcount\fw@cardn
+\newsavebox\fw@cardsbox
+\newif\iffw@cardsanchor
+% \fwcard{Inhalt oben}{Fußzeile} – nur innerhalb von \fwcardspage; bricht die Reihe selbst um
+\newcommand\fwcard[2]{%
+  \sbox\fw@cardbox{\begin{tcolorbox}[fw card]#1\tcblower #2\end{tcolorbox}}%
+  \ifnum\fw@cardn=0 \noindent\fi%
+  \begin{tikzpicture}
+    \useasboundingbox (0,0) rectangle (63mm,88mm);
+    \draw[fwline, line width=0.6pt, dash pattern=on 1.4pt off 1.4pt] (0,0) rectangle (63mm,88mm);
+    \node[inner sep=0pt] at (31.5mm,44mm) {\usebox\fw@cardbox};
+  \end{tikzpicture}%
+  \global\advance\fw@cardn 1
+  \ifnum\fw@cardn<\fw@cardcols\relax\else\global\fw@cardn=0 \par\nointerlineskip\fi%
+  \ignorespaces}
+\newcommand\fw@cardhint[1]{{\fontsize{8.5}{11}\selectfont\itshape\color{fwgrey}#1\par}}
+\newcommand\fwcardspage[2]{% Hinweis, Karten
+  \clearpage
+  \iffw@book\newgeometry{top=8mm,bottom=12mm,left=26mm,right=14mm,nohead,nofoot}%
+  \else\newgeometry{top=16mm,bottom=18mm,left=11mm,right=10mm,nohead,nofoot}\fi
+  \global\fwnotesfalse\gdef\fwcurrent{}%
+  \iffw@cardsanchor\else\global\fw@cardsanchortrue
+    \phantomsection\pdfbookmark[0]{\advStrCardsHeading}{bm-cards}\label{cards}\fi
+  \fw@heading{\advStrCardsHeading}%
+  \global\fw@cardn=0
+  \sbox\fw@cardsbox{\begin{minipage}[b]{\dimexpr63mm*\fw@cardcols+0.1mm\relax}%
+    \setlength\parskip{0pt}#2\par\end{minipage}}%
+  \global\fw@cardn=0
+  \iffw@book
+    % Karten innen am Bundsteg, der Hinweis in der freien Spalte außen
+    \vspace{2mm}\nointerlineskip\fw@setside
+    \hbox to\linewidth{%
+      \iffw@left\else\usebox\fw@cardsbox\hfil\fi%
+      \begin{minipage}[b][\ht\fw@cardsbox][t]{38mm}\fw@ragged\fw@cardhint{#1}\end{minipage}%
+      \iffw@left\hfil\usebox\fw@cardsbox\fi}%
+  \else
+    \vspace{-1.2mm}\fw@cardhint{#1}\vspace{3mm}\nointerlineskip
+    \hbox to\linewidth{\hss\usebox\fw@cardsbox\hss}%
+  \fi}
+
+% ---------------------------------------------------------------- Querformat: Karten und Handouts
+\newcommand\fw@landscape{%
+  \clearpage
+  \iffw@book\else
+    \global\paperwidth=297mm \global\paperheight=210mm
+    \ifLuaTeX\global\pagewidth=297mm \global\pageheight=210mm
+    \else\global\pdfpagewidth=297mm \global\pdfpageheight=210mm\fi
+  \fi}
+% \fwlmmap[Gruppen-Lesezeichen]{label}{Titel}{Untertitel}{Bild}{Lesezeichen}
+\NewDocumentCommand\fw@bookmarks{mmm}{% gruppe, label, titel
+  \phantomsection
+  \ifblank{#1}{}{\pdfbookmark[0]{#1}{bm-grp-#2}}%
+  \pdfbookmark[1]{#3}{bm-#2}\label{#2}}
+\NewDocumentCommand\fwlmmap{O{}mmmmm}{%
+  \fw@landscape\gdef\fwpagekind{lm}%
+  \AddToShipoutPictureFG*{\setlength\unitlength{1mm}\fw@landpic{%
+    \put(14,183.5){\makebox(0,0)[lb]{\fontsize{13}{15}\selectfont\bfseries\color{fwred}#3%
+      \hspace{3mm}{\mdseries\itshape\fontsize{9.5}{11}\selectfont\color{fwgrey}#4}}}%
+    \put(14,182){\color{fwhline}\linethickness{0.6pt}\line(1,0){269}}%
+    \put(148.5,19){\makebox(0,0)[b]{\includegraphics[height=160mm]{#5}}}}}%
+  \null\fw@bookmarks{#1}{#2}{#6}}
+% \fwhandoutmap[Gruppen-Lesezeichen]{label}{Bild}{Lesezeichen}
+\NewDocumentCommand\fwhandoutmap{O{}mmm}{%
+  \fw@landscape\gdef\fwpagekind{handout}%
+  \AddToShipoutPictureFG*{\setlength\unitlength{1mm}\fw@landpic{%
+    \put(148.5,97){\makebox(0,0){\includegraphics[height=178mm]{#3}}}}}%
+  \null\fw@bookmarks{#1}{#2}{#4}}
+% \fwhandoutletter{label}{bookmark}{id} – text and signature of the letter with that id
+% come from build/letters.tex (written by the Pandoc filter)
+\newsavebox\fw@letterbox
+\newcommand\fwhandoutletter[3]{%
+  \fw@landscape\gdef\fwpagekind{handout}%
+  \sbox\fw@letterbox{\begin{tcolorbox}[enhanced, width=200mm, sharp corners,
+      interior style={inner color=fwparchdark, outer color=fwparchedge},
+      colframe=fwgold, boxrule=0.8pt, left=18mm, right=18mm, top=12mm, bottom=12mm, boxsep=0pt,
+      fontupper=\fwchorus\fontsize{17.5}{25}\selectfont\color{fwletterink}\raggedright]
+    \csname fwletter@#3\endcsname\par\vspace{5mm}\hspace*{\fill}\csname fwlettersig@#3\endcsname
+  \end{tcolorbox}}%
+  \AddToShipoutPictureFG*{\setlength\unitlength{1mm}\fw@landpic{%
+    \put(148.5,97){\makebox(0,0){\usebox\fw@letterbox}}}}%
+  \null\fw@bookmarks{}{#1}{#2}}
+
+% ---------------------------------------------------------------- Buchfassung: Titelblatt, Bogenfüllung
+% \fwbooktitle{Titel}{Untertitel} – Titelblatt mit leerer Rückseite
+\newcommand\fwbooktitle[2]{%
+  \gdef\fwpagekind{blank}%
+  \begingroup\centering
+  \null\vspace{28mm}%
+  \includegraphics[height=32mm]{assets/logo-print.png}\par
+  \vspace{10mm}%
+  {\fontsize{38}{44}\selectfont\bfseries\color{fwred}#1\par}%
+  \vspace{6mm}{\color{fwred}\hrule height 1.2pt}\vspace{6mm}%
+  {\fontsize{13}{18}\selectfont\itshape\color{fwgrey}#2\par}%
+  \vfill
+  {\fontsize{9}{12}\selectfont\color{fwgrey}\advStrVersion{} \fwversion\ · \advStrDate{} \fwstand\par
+   \advCredit\par}%
+  \endgroup
+  \clearpage\null\clearpage
+  \gdef\fwpagekind{normal}}
+% Notizseiten anhängen, bis die Seitenzahl durch 4 teilbar ist (ganze Bogen)
+\newcommand\fw@fill{%
+  \@tempcnta=\c@page \advance\@tempcnta\m@ne
+  \@tempcntb=\@tempcnta \divide\@tempcntb 4 \multiply\@tempcntb 4
+  \ifnum\@tempcnta>\@tempcntb \null\clearpage\expandafter\fw@fill\fi}
+\newcommand\fwfillsheets{\clearpage\gdef\fwpagekind{fill}\fw@fill}
+
+\endinput

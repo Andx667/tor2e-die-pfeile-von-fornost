@@ -1,0 +1,17 @@
+% Book edition: a book block for binding. Called by tools/build.py (LuaLaTeX, working directory = project root).
+% Double-sided with inner margin, title page, all pages A4 portrait (landscape pages turned),
+% page count divisible by 4. Single pages in reading order, not imposed.
+\documentclass[10pt,twoside]{article}
+\input{build/meta.tex}
+\usepackage[book]{tor2e}
+\input{build/version.tex}
+
+\begin{document}
+
+\fwbooktitle{\advTitle}{\advSubtitle}
+
+\input{latex/inhalt.tex}
+
+\fwfillsheets
+
+\end{document}

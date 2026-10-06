@@ -1,0 +1,73 @@
+name: Build PDFs
+
+# Runs on every commit (any branch), pull requests and by hand.
+# Tagged commits (v*) are additionally published as a release with the PDFs.
+on:
+  push:
+    branches: ["**"]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Runs for the same ref go one after another, otherwise they race to create the release.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    # Full TeX Live (LuaLaTeX, hyphenation patterns, TeX Gyre fonts)
+    container: texlive/texlive:latest
+    steps:
+      - name: Install tools (git, pandoc, python3, Pillow)
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends git pandoc python3 python3-pil ca-certificates
+
+      - name: Check out (with tags for the version number)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Allow the git directory
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Build the PDFs
+        id: build
+        env:
+          FW_ENGINE: lualatex
+        run: python3 tools/build.py
+
+      # archive: false stores the PDF directly (no ZIP); the artifact is named like the file
+      - name: Upload the sheet edition
+        uses: actions/upload-artifact@v7
+        with:
+          path: ${{ steps.build.outputs.pdf_sheet }}
+          archive: false
+          if-no-files-found: error
+
+      - name: Upload the book edition
+        uses: actions/upload-artifact@v7
+        with:
+          path: ${{ steps.build.outputs.pdf_book }}
+          archive: false
+          if-no-files-found: error
+
+      - name: Upload the build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build/*.log
+
+      - name: Release for tags
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ steps.build.outputs.pdf_sheet }}
+            ${{ steps.build.outputs.pdf_book }}
