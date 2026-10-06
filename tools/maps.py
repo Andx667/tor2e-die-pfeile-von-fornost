@@ -570,72 +570,6 @@ def map_fornost(lm):
     return bg
 
 
-def map_schlachtfeld(lm):
-    """Detail of the battlefield: 100 Schritt = 240 px."""
-    seed = 17
-    bg = parchment(seed)
-    pen = Pen(bg, seed)
-    frame(pen)
-    # ridge on the west bank of the stream
-    blob(pen, [(380, 260), (500, 230), (610, 270), (630, 480), (610, 760), (540, 860), (440, 830), (400, 560)], (226, 214, 182))
-    for k in range(9):
-        pen.line([(420, 300 + k * 60), (480, 290 + k * 60)], w=1.2, col=GREY, amp=0.3)
-    # stream with a single ford
-    stream(pen, [(1000, 100), (930, 300), (960, 480), (930, 620), (940, 780), (1010, 960), (990, 1120)], 28)
-    pen.rect(910, 560, 980, 640, fill=(214, 196, 150), outline=GREY, w=1.6, amp=0.4)
-    # steep banks: ticks along both banks except at the ford
-    for y in range(120, 1100, 38):
-        if 540 < y < 660:
-            continue
-        pen.line([(918, y), (906, y + 10)], w=1.2, col=GREY, amp=0.2)
-        pen.line([(982, y), (994, y + 10)], w=1.2, col=GREY, amp=0.2)
-    # grass tufts
-    rnd = random.Random(3)
-    for _ in range(40):
-        gx, gy = rnd.randint(120, 1480), rnd.randint(120, 1080)
-        if 340 < gx < 680 and 220 < gy < 880 or 880 < gx < 1050:
-            continue
-        pen.line([(gx, gy), (gx - 4, gy - 10)], w=1.2, col=GREY, amp=0.2)
-        pen.line([(gx, gy), (gx + 4, gy - 10)], w=1.2, col=GREY, amp=0.2)
-    pen.text((520, 205), "Westrücken", size=44)
-    pen.text((1180, 600), "Furt", size=40)
-    pen.text((1180, 150), "weite Felder", size=40, col=GREY)
-    pen.text((1200, 1060), "nach Fornost, gut zwei Meilen", size=28, col=GREY)
-    pen.arrow([(1450, 960), (1520, 900)], w=3, col=GREY, dashed=False)
-    pen.text((200, 960), "zur Wegwacht und zum Greenway", size=28, col=GREY)
-    cartouche(pen, "Das Schlachtfeld", "Orte 2 und 3 in Teil 4")
-    compass(pen)
-    scalebar(pen, "100 Schritt", length=240)
-    if lm:
-        # crest hollows
-        for k in range(24):
-            hollow(pen, 560 + (k % 3) * 8 - (k // 8) * 6, 300 + k * 22)
-        # arrows over the ford, riders come from the east
-        for yy in (400, 500, 600, 700):
-            pen.arrow([(640, yy), (900, 600 + (yy - 600) * 0.3)], w=2, col=RED, head=9)
-        pen.arrow([(1250, 560), (1000, 600)], w=4, col=RED)
-        pen.text((1140, 520), "Reiter von Angmar", size=28, col=RED)
-        # arrowheads in the streambed (B) and the buckle in a hollow (C)
-        for _ in range(26):
-            pen.line([(rnd.randint(935, 985), rnd.randint(560, 650)),
-                      (rnd.randint(935, 985), rnd.randint(560, 650))], w=1.8, col=INK, amp=0.2)
-        pen.text((1100, 690), "Pfeilspitzen im Bachbett (B)", size=26, col=RED)
-        pen.circle(560, 480, 6, fill=(120, 150, 110), outline=INK, w=1.6)
-        pen.text((470, 440), "Schnalle (C)", size=24, col=RED)
-        pen.text((520, 380), "Mulden (A)", size=26, col=RED)
-        pen.text((1120, 450), "Schussfeld (I)", size=26, col=RED)
-        # Heimweg: cairns in threes from the southern end of the ridge (H)
-        pts = [(520, 860), (480, 930), (430, 1000), (380, 1060)]
-        pen.dashed(pts, w=3)
-        for (cx, cy) in pts:
-            for dx, dy in ((-8, 0), (8, 0), (0, -12)):
-                pen.circle(cx + dx, cy + dy, 5, fill=STONE, outline=INK, w=1.4)
-        pen.text((330, 920), "Steinhaufen zu dritt (H)", size=26, col=RED)
-        pen.marker((960, 560), 2)
-        pen.marker((520, 540), 3)
-    return bg
-
-
 def map_wegwacht(lm):
     seed = 13
     bg = parchment(seed)
@@ -680,7 +614,7 @@ def map_wegwacht(lm):
     return bg
 
 
-MAPS = {"example": map_example, "fornost": map_fornost, "schlachtfeld": map_schlachtfeld, "wegwacht": map_wegwacht}
+MAPS = {"example": map_example, "fornost": map_fornost, "wegwacht": map_wegwacht}
 
 
 def render(name, lm):
