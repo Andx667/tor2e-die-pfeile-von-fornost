@@ -537,17 +537,20 @@ def map_fornost(lm):
     pen.text((1250, 665), "Wegwacht", size=32)
     pen.text((960, 200), "alte Hügelgräber", size=34)
     pen.text((470, 230), "die Felder", size=44, col=GREY)
-    pen.text((640, 790), "Westrücken", size=32, rot=-80)
+    pen.text((640, 790), "Westhöhe", size=32, rot=-80)
     pen.text((775, 500), "Furt", size=30)
     pen.text((1140, 1150), "nach Bree", size=32, col=GREY)
     cartouche(pen, "Fornost und die Felder", "Nummern wie in Teil 4")
     compass(pen)
     scalebar(pen, "1 Meile", length=300)
-    pen.text((560, 1170), "Entfernungen im Feld nicht maßstäblich", size=24, col=GREY, halo=False)
+    pen.text((680, 1170), "Entfernungen im Feld nicht maßstäblich", size=24, col=GREY, halo=False)
     if lm:
-        # route of the Hirtenpfad / Heimweg: Greenway to the southern end of the ridge (hint H)
-        pen.dashed([(1060, 1100), (900, 1000), (760, 880), (620, 760), (580, 700)], w=3)
-        pen.text((850, 930), "Hirtenpfad / Heimweg (H)", size=28, col=RED)
+        # the forgotten path (hint H): ridge straight towards the Brandywine Bridge, crossed by the Hirtenpfad
+        pen.dashed([(560, 740), (500, 900), (430, 1050), (360, 1190)], w=3)
+        pen.text((420, 960), "vergessener Pfad (H)", size=26, col=RED, rot=70)
+        pen.text((300, 1100), "zur Brandywine Bridge", size=24, col=RED, rot=70)
+        pen.dashed([(1060, 1100), (900, 1030), (700, 960), (520, 880), (450, 760)], w=2, col=GREY, dash=8, gap=10)
+        pen.text((960, 1085), "Hirtenpfad (Short Cut)", size=26, col=GREY, halo=False)
         # sight line from Fornost's hill to the ford
         pen.dashed([(1130, 270), (900, 400), (710, 520)], w=2, col=GREY, dash=8, gap=10)
         pen.text((1010, 470), "Sichtweite", size=26, col=GREY, halo=False)
@@ -562,7 +565,7 @@ def map_fornost(lm):
             pen.rect(832 + i * 14, 392, 842 + i * 14, 402, fill=(205, 194, 168), outline=INK, w=1.2, amp=0.2)
             pen.rect(832 + i * 14, 408, 842 + i * 14, 418, fill=(205, 194, 168), outline=INK, w=1.2, amp=0.2)
         pen.text((850, 445), "kleine Gräber (F)", size=24, col=RED)
-        for (mx, my), n, hints in (((1150, 590), 1, "E, G"), ((760, 560), 2, "B, I"), ((540, 330), 3, "A, C"),
+        for (mx, my), n, hints in (((1150, 590), 1, "E, G"), ((760, 560), 2, "B, I"), ((540, 330), 3, "A, C, (H)"),
                                     ((960, 280), 4, "F"), ((1300, 235), 5, "D")):
             pen.marker((mx, my), n)
             pen.text((mx, my + 38), hints, size=28, col=RED)
@@ -581,7 +584,7 @@ def map_wegwacht(lm):
     plan.paint(bg)
     pen = Pen(bg, seed)
     frame(pen)
-    # slits in the south wall, all facing the road
+    # slits in the south wall: the toll keepers watched the road
     for x in (400, 650, 900):
         pen.rect(x - 14, 734, x + 14, 746, fill=INK, outline=INK, w=1)
     pen.text((900, 780), "Schießscharten nach Süden", size=26, col=GREY, halo=False)
@@ -608,9 +611,9 @@ def map_wegwacht(lm):
             pen.line([(776, 560 + i * 12), (770, 560 + i * 12 + 8)], w=1.6, col=RED, amp=0.2)
         pen.text((700, 480), "geritzte Verse (E)", size=28, col=RED)
         pen.line([(790, 490), (782, 520)], w=2, col=RED)
-        # supply niche (hint G, extraordinary success)
-        pen.rect(1008, 560, 1030, 600, fill=(220, 190, 170), outline=RED, w=2)
-        pen.text((930, 700), "Nische mit Vorrat (G)", size=26, col=RED)
+        # toll tablet beside the door (hint G)
+        pen.rect(436, 728, 496, 748, fill=(220, 190, 170), outline=RED, w=2)
+        pen.text((380, 790), "Zolltafel (G)", size=26, col=RED)
     return bg
 
 

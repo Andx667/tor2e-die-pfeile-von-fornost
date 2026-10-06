@@ -12,7 +12,7 @@ nobody ever confirms it.
 
 - Warm and curious, with one dangerous place (a barrow-wight) that has nothing to do with the clues.
 - A sandbox: five locations in any order, ten clues (A–J) of which the Loremaster picks the ones to use.
-- *Skill Points* for the journey and the first three clues only. No *Fellowship Phase*.
+- *Skill Points* for the journey and for the 1st, 3rd and 6th clue found (1, 2 and 3 points). No *Fellowship Phase*.
 - Written for experienced Loremasters: no stat blocks, the *Core Rules* provide them.
 
 The text is in [src/adventure.md](src/adventure.md) (German). The PDF is built by GitHub Actions on every commit;

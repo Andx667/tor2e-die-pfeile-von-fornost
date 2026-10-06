@@ -33,6 +33,7 @@ local TABLES = {
   ["Volk"]      = { widths = { 0.16, 0.84 }, size = "small" },
   ["Teil"]      = { widths = { 0.27, 0.12, 0.10, 0.51 }, size = "normal" },
   ["Hinweis"]   = { widths = { 0.12, 0.30, 0.16, 0.42 }, size = "small" },
+  ["Spur"]      = { widths = { 0.22, 0.17, 0.15, 0.10, 0.18, 0.06, 0.06, 0.06 }, size = "small" },
   -- English edition
   ["Part"]      = { widths = { 0.27, 0.12, 0.10, 0.51 }, size = "normal" },
   ["When"]      = { widths = { 0.21, 0.59, 0.20 }, size = "small" },
@@ -47,11 +48,11 @@ local function raw(s) return pandoc.RawBlock("latex", s) end
 local function rawi(s) return pandoc.RawInline("latex", s) end
 
 local function to_latex_inlines(inlines)
-  local s = pandoc.write(pandoc.Pandoc({ pandoc.Plain(inlines) }), "latex")
+  local s = pandoc.write(pandoc.Pandoc({ pandoc.Plain(inlines) }), "latex-smart")
   return (s:gsub("%s+$", ""))
 end
 local function to_latex_blocks(blocks)
-  local s = pandoc.write(pandoc.Pandoc(blocks), "latex")
+  local s = pandoc.write(pandoc.Pandoc(blocks), "latex-smart")
   return (s:gsub("%s+$", ""))
 end
 

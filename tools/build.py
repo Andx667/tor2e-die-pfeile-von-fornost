@@ -232,7 +232,7 @@ def main():
 
     write_meta(cfg)
     env = dict(os.environ, FW_BUILD=BUILD)
-    run(["pandoc", SOURCE, "-f", "markdown", "-t", "latex", "--lua-filter", "filters/tor2e.lua",
+    run(["pandoc", SOURCE, "-f", "markdown", "-t", "latex-smart", "--lua-filter", "filters/tor2e.lua",
          "-o", os.path.join(BUILD, "body.tex")], env=env)
     cards, has_cards = cards_tex()
     with open(os.path.join(BUILD, "cards.tex"), "w", encoding="utf-8") as f:
