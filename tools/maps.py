@@ -551,6 +551,7 @@ def map_fornost(lm):
         pen.text((300, 1100), "zur Brandywine Bridge", size=24, col=RED, rot=70)
         pen.dashed([(1060, 1100), (900, 1030), (700, 960), (520, 880), (450, 760)], w=2, col=GREY, dash=8, gap=10)
         pen.text((960, 1085), "Hirtenpfad (Short Cut)", size=26, col=GREY, halo=False)
+        pen.text((430, 735), "zu den Feldern", size=24, col=GREY, halo=False)
         # sight line from Fornost's hill to the ford
         pen.dashed([(1130, 270), (900, 400), (710, 520)], w=2, col=GREY, dash=8, gap=10)
         pen.text((1010, 470), "Sichtweite", size=26, col=GREY, halo=False)
@@ -597,7 +598,7 @@ def map_wegwacht(lm):
     for i in range(4):
         pen.rect(440 + i * 30, 440, 466 + i * 30, 470, fill=(214, 190, 150), outline=INK, w=1.6, amp=0.3)
     pen.text((650, 600), "Wohnraum", size=44)
-    pen.text((900, 620), "Vorrat", size=40)
+    pen.text((900, 620), "Nebenraum", size=40)
     pen.text((440, 340), "eingestürzter Anbau", size=34)
     rubble(pen, 480, 300, 22, 50)
     pen.text((540, 900), "Greenway", size=34, rot=90)
@@ -609,8 +610,8 @@ def map_wegwacht(lm):
         # tally marks and verses on the east wall (hint E)
         for i in range(10):
             pen.line([(776, 560 + i * 12), (770, 560 + i * 12 + 8)], w=1.6, col=RED, amp=0.2)
-        pen.text((700, 480), "geritzte Verse (E)", size=28, col=RED)
-        pen.line([(790, 490), (782, 520)], w=2, col=RED)
+        pen.text((680, 452), "geritzte Verse (E)", size=26, col=RED)
+        pen.line([(762, 462), (776, 520)], w=2, col=RED)
         # toll tablet beside the door (hint G)
         pen.rect(436, 728, 496, 748, fill=(220, 190, 170), outline=RED, w=2)
         pen.text((380, 790), "Zolltafel (G)", size=26, col=RED)

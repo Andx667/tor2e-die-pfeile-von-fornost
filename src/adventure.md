@@ -87,7 +87,7 @@ Die Gefährten dürfen fragen, was sie wollen. Antworten, die sie mit *Insight* 
 ## Teil 2: Die Straße {#part2}
 
 *Etwa 30 Minuten.* **Route:** Von Tuckborough über die Brandywine Bridge und die Oststraße nach Bree, dann auf dem Greenway nach Norden zu den North Downs und nach Fornost. Spiele die Reise als zwei kurze *Journeys*: Shire–Bree und Bree–Fornost. Die *Journey*-Regeln bestimmen, welche Ereignisse eintreten und wie sie sich auswirken. Hier steht nur, was geschieht.
-**Einkehr in Bree:** Kehren die Gefährten im *Prancing Pony* ein, erwähnt jemand die Geschichte. Der Wirt lacht höflich und wechselt das Thema: „Hobbit-Schützen bei Fornost? Bei uns hat man andere Märchen.“ Das ist kein *Journey*-Ereignis, sondern nur, was geschieht, wenn sie den Umweg durch die Stadt wählen.
+**Einkehr in Bree:** Kehren die Gefährten im *Prancing Pony* ein, erwähnt jemand die Geschichte. Der Wirt lacht höflich und wechselt das Thema: „Hobbit-Schützen bei Fornost? Bei uns hat man andere Märchen.“ Das ist kein *Journey*-Ereignis, sondern nur, was geschieht, wenn sie sich in Bree Zeit für einen Abend im Wirtshaus nehmen.
 
 ### *Journey* Events
 
