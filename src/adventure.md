@@ -2,7 +2,7 @@
 
 Mirabella Took, über neunzig und in Tuckborough für ihren scharfen Verstand bekannt, bittet die Gefährten um einen letzten Gefallen: Sie will zu Lebzeiten beweisen, dass die Hobbits mehr sind als Pfeifenraucher und Bauern. In den Familien des Shire erzählt man stolz, Hobbit-Bogenschützen hätten in der Schlacht von Fornost (TA 1975) dem König geholfen. Menschen und Elben wissen nichts davon oder bestreiten es. Die Gefährten reisen zu den Ruinen von Fornost und suchen auf dem Schlachtfeld nach Spuren, die tausend Jahre überdauert haben. Sie finden Hinweise, aber keinen Beweis. Am Ende müssen sie entscheiden, was sie Mirabella sagen, die den Ruhm will, den die anderen den Hobbits nicht gönnen.
 
-**Schauplatz:** Eriador (*Eriador*): Tuckborough, Bree, der Greenway und die North Downs bei Fornost, Herbst TA 2951.
+**Schauplatz:** Eriador: Tuckborough, Bree, der Greenway und die North Downs bei Fornost, Herbst TA 2951.
 
 **Stimmung:** Warm, neugierig, mit einem Hauch Gänsehaut.
 
@@ -15,11 +15,11 @@ Mirabella Took, über neunzig und in Tuckborough für ihren scharfen Verstand be
 | 1. Der Auftrag | 20 min | 0:20 | Mirabella Took bittet um Hilfe |
 | 2. Die Straße | 30 min | 0:50 | Eine kurze *Journey* von Tuckborough nach Fornost |
 | 3. Die Downs | 20 min | 1:10 | Ankunft und die Wegwacht |
-| 4. Das Schlachtfeld | 125 min | 3:15 | Fünf Orte, zehn mögliche Hinweise |
+| 4. Das Schlachtfeld | 125 min | 3:15 | Fünf Orte, acht der zehn Hinweise |
 | 5. Das Feuer | 25 min | 3:40 | Die Gefährten legen sich ihre Schlüsse zurecht |
 | Nachspiel | 20 min | 4:00 | Was sie Mirabella sagen |
 
-**Hinweis für den Loremaster:** Das Abenteuer ist ein Sandkasten. Die Gruppe wählt die Reihenfolge der Orte selbst. Du entscheidest vor der Sitzung, welche der zehn Hinweise (*A* bis *J*, siehe Anhang) du auf welche Orte verteilst. Wenn die Zeit knapp wird, kürze in dieser Reihenfolge: die Reise, die Ankunft in Teil 3, einen der Orte in Teil 4. Kürze nie das Feuer in Teil 5.
+**Hinweis für den Loremaster:** Das Abenteuer ist ein Sandkasten. Die Gruppe wählt die Reihenfolge der Orte selbst. Zwei der zehn Hinweise (*H* und *J*) liegen auf der Reise, die übrigen acht an den Orten (siehe Anhang). Du entscheidest vor der Sitzung, welche du verwendest. Wenn die Zeit knapp wird, kürze in dieser Reihenfolge: die Reise, die Ankunft in Teil 3, einen der Orte in Teil 4. Kürze nie das Feuer in Teil 5.
 
 **Hinweis für den Loremaster:** Nichts in diesem Abenteuer wird je bestätigt. Kein NSC sagt: „Ja, sie waren dabei.“ Jeder Hinweis lässt eine harmlose Erklärung zu, und der Anhang nennt sie dir. Die Spieler sollen auf Grund von Hinweisen glauben, nicht auf Grund von Aussagen.
 
@@ -60,8 +60,8 @@ Sie erzählt ihre Geschichte und liest einen Zettel vor (Handout 1). Er enthält
 ### Der Zettel (Handout)
 
 ::: {.letter #zettel title="Handout 1: Mirabellas Zettel"}
-Vierzig Pfeile, ein Pfeifchen, ein Stück Brot,\
-so zogen wir aus, als der König uns bot.\
+Vierzig Pfeile, ein Krug Bier, ein Stück Brot,\
+so zogen wir aus, als der König rief in Not.\
 Wir standen am Rücken und schossen so gut,\
 dass dem Feind an der Furt sank der Mut.\
 Singt's laut, ihr Tooks, nach all der Zeit:\
@@ -82,7 +82,7 @@ Die Gefährten dürfen fragen, was sie wollen. Antworten, die sie mit *Insight* 
 
 - Sie hat selbst nie nachgesehen: Die Reise ist ihr zu weit gewesen, solange sie jünger war, und jetzt ist sie zu alt.
 - Sie will Ruhm für das Shire. „Pfeifenraucher und Bauern, immer wieder. Ich will, dass jemand in Bree zugeben muss, dass es anders war.“
-- Sie hat in den alten Büchern der Tooks nachgesehen. Nichts. Nicht einmal eine Lücke. „Das ist es, was mir seltsam vorkommt“, sagt sie.
+- Sie hat in den alten Büchern der Tooks nachgesehen. Nichts Schriftliches, nur das Lied. „Alles andere wird bei uns aufgeschrieben, jede Hochzeit, jede Ernte. Nur das nicht. Das kommt mir seltsam vor“, sagt sie.
 
 ## Teil 2: Die Straße {#part2}
 
@@ -90,9 +90,9 @@ Die Gefährten dürfen fragen, was sie wollen. Antworten, die sie mit *Insight* 
 
 ### *Journey* Events
 
-- **Der Wirt im Prancing Pony** (*Chance Meeting*): In Bree erwähnt jemand die Geschichte. Der Wirt lacht höflich und wechselt das Thema: „Hobbit-Schützen bei Fornost? Bei uns hat man andere Märchen.“ Er kennt die Geschichte nicht, aber er amüsiert sich auch nicht darüber, sondern wirkt verlegen.
-- **Gerta** (*Chance Meeting*): Auf dem Greenway nördlich von Bree treffen die Gefährten **Gerta**, eine Schäferin aus dem Bree-land, die ihre Herde auf die Winterweide treibt. Sie ist freundlich und redselig und fragt nach dem Ziel. Wenn die Gefährten Fornost nennen, erzählt sie: Ihre Großmutter hat ihr beigebracht, dass man in Bree nicht nach den „Kleinen am Rücken“ fragt. Was damit gemeint ist, weiß sie nicht. Das ist **Hinweis J** (*Courtesy*). Sie warnt vor den alten Hügelgräbern bei Fornost: „Da wird einem kalt, auch wenn die Sonne scheint.“ Wird kein *Chance Meeting* ausgelöst, lässt du Hinweis J weg.
-- **Ein stiller Schatten** (*Chance Meeting*): Ein Ranger beobachtet die Gruppe von weitem und verschwindet, wenn sie sich ihm nähern. Es ist ein Wächter der Dúnedain. Er greift nicht ein und redet nicht.
+- **Der Wirt im Prancing Pony** (*Chance-meeting*): In Bree erwähnt jemand die Geschichte. Der Wirt lacht höflich und wechselt das Thema: „Hobbit-Schützen bei Fornost? Bei uns hat man andere Märchen.“ Er lacht nur mit dem Mund und wirkt dabei verlegen, als sei ihm die Frage unangenehm. Mehr weiß er nicht.
+- **Gerta** (*Chance-meeting*): Auf dem Greenway nördlich von Bree treffen die Gefährten **Gerta**, eine Schäferin aus dem Bree-land, die ihre Herde auf die Winterweide treibt. Sie ist freundlich und redselig und fragt nach dem Ziel. Wenn die Gefährten Fornost nennen, erzählt sie: Ihre Großmutter hat ihr beigebracht, dass man in Bree nicht nach den „Kleinen am Rücken“ fragt. Was damit gemeint ist, weiß sie nicht. Das ist **Hinweis J** (*Courtesy*). Sie warnt vor den alten Hügelgräbern bei Fornost: „Da wird einem kalt, auch wenn die Sonne scheint.“ Wird kein *Chance-meeting* ausgelöst, lässt du Hinweis J weg.
+- **Ein stiller Schatten** (*Chance-meeting*): Ein Ranger beobachtet die Gruppe von weitem und verschwindet, wenn sie sich ihm nähern. Es ist ein Wächter der Dúnedain. Er greift nicht ein und redet nicht.
 - **Goldenes Licht am Greenway** (*Joyful Sight*): Im Spätnachmittagslicht stehen die Buchen von Chetwood in Gold. Es gibt einen Rastplatz am Wegrand, ein Feuer, Platz für ein Lied.
 - **Nebel und Nässe** (*Mishap*): Der Nebel fällt, die Vorräte werden feucht, und der Greenway verschwindet im Grau.
 - **Der Hirtenpfad** (*Short Cut*): Ein schmaler Pfad zweigt vom Greenway nach Nordwesten ab, führt über die Downs zu den Feldern westlich von Fornost und spart einen Tag. Am Wegrand stehen kleine Steinhaufen, immer zu dritt, und das Gras ist gemäht. Jemand pflegt diesen Weg. Er ist ein Teil der Heimwegsteine (**Hinweis H**, siehe Anhang), und die Gefährten sehen den Anfang davon.
@@ -112,7 +112,7 @@ Am Abend erreichen die Gefährten die **Wegwacht** am Greenway, eine Meile südl
 
 ## Teil 4: Das Schlachtfeld {#part4}
 
-*Etwa 125 Minuten.* Fünf Orte liegen im Umkreis von einem halben Tag. Die Gefährten wählen die Reihenfolge. Jeder Ort braucht etwa 25 Minuten. Du entscheidest vor der Sitzung, welche Hinweise (*A* bis *J*) wo liegen, jeweils höchstens zwei pro Ort. Die Hinweise stehen mit Fertigkeit, Fund und Alternativerklärung im Anhang.
+*Etwa 125 Minuten.* Fünf Orte liegen im Umkreis von einem halben Tag. Die Gefährten wählen die Reihenfolge. Jeder Ort braucht etwa 25 Minuten. Die möglichen Hinweise stehen bei jedem Ort, höchstens zwei pro Ort. Du entscheidest vor der Sitzung, welche du verwendest. *H* und *J* findet die Gruppe auf der Reise (Teil 2). Fertigkeit, Fund und Alternativerklärung stehen im Anhang.
 
 **Erfahrung:** Für den ersten, zweiten und dritten gefundenen Hinweis erhält jeder Held je 1 *Skill Point*. Danach gibt es keine mehr.
 
@@ -128,7 +128,7 @@ Ein namenloser Bach windet sich durch die Felder westlich von Fornost, mit steil
 
 Mögliche Hinweise: **B** (*Explore*: Pfeilspitzen im Bachbett), **I** (*Battle*: das Schussfeld).
 
-**Optionale Erweiterung – Ein Fehltritt:** Wer die steile Uferböschung ohne Seil hinabsteigt, braucht eine *Athletics*-Probe. Bei einem Misserfolg rutscht er ab und verliert 2 *Endurance*. Ein Gefährte kann ihm helfen.
+**Optionale Erweiterung – Ein Fehltritt:** Wer die steile Uferböschung ohne Seil hinabsteigt, braucht einen *Athletics*-Wurf. Bei einem Misserfolg rutscht er ab und verliert 2 *Endurance*. Ein Gefährte kann ihm helfen.
 
 ### 3. Der Westrücken
 
@@ -150,11 +150,11 @@ Der Angriff dient keinem Zweck der Geschichte: Die Gefährten gewinnen weder Hin
 
 ### 5. Die Zitadelle von Fornost
 
-Die Ruinen der alten Königsstadt: abgebrochene Mauern, Treppen, die ins Nichts führen. Hier saß einst König Arvedui. In einer Seitenhalle sind Reliefs in die Wand gemeißelt, die ein Heer in Aufstellung zeigen.
+Die Ruinen der alten Königsstadt: abgebrochene Mauern, Treppen, die ins Nichts führen. Hier saß einst König Arvedui. In einer Seitenhalle ließen die Dúnedain nach dem Sieg ein Relief in die Wand meißeln, das ein Heer in Aufstellung zeigt.
 
 Mögliche Hinweise: **D** (*Lore* oder *Riddle*: das abgemeißelte Relief).
 
-**Optionale Erweiterung – Ein Rätsel im Staub:** Wer die Reliefs untersucht, bemerkt, dass jemand an einer Stelle sorgfältig gearbeitet hat, nicht mit Hass, sondern mit Handwerk. Eine *Craft*-Probe zeigt, dass die Meißelspuren sauber und überlegt gesetzt sind, eher Handwerk als Zerstörungswut. Wer das tat, wollte etwas verschwinden lassen, nicht jemanden schmähen.
+**Optionale Erweiterung – Ein Rätsel im Staub:** Wer das Relief untersucht, bemerkt, dass jemand an einer Stelle sorgfältig gearbeitet hat, nicht mit Hass, sondern mit Handwerk. Ein *Craft*-Wurf zeigt, dass die Meißelspuren sauber und überlegt gesetzt sind, eher Handwerk als Zerstörungswut. Wer das tat, wollte etwas verschwinden lassen, nicht jemanden schmähen.
 
 ## Teil 5: Das Feuer {#part5}
 
@@ -192,7 +192,7 @@ In allen Fällen: Irgendwo weit im Norden steht ein Ranger an einem Feuer und si
 
 Die Hinweise *A* bis *J* sind ein Vorrat. Wähle vor der Sitzung, welche du verwendest und wo sie liegen. Mit zehn Hinweisen hast du mehr, als die Gruppe in der Zeit finden kann. Die Fertigkeiten sind absichtlich verschieden, damit jeder Held etwas beitragen kann.
 
-Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefert einen Zusatz, den jeder Eintrag unten nennt. Ein Misserfolg verbaut den Hinweis nicht: Die Gefährten können es später noch einmal versuchen, oder ein anderer Held übernimmt.
+Ein gelungener Wurf reicht für jeden Hinweis. Ein *Extraordinary Success* liefert einen Zusatz, den jeder Eintrag unten nennt. Ein Misserfolg verbaut den Hinweis nicht: Die Gefährten können es später noch einmal versuchen, oder ein anderer Held übernimmt.
 
 | Hinweis | Fund | Fertigkeit | Stützt |
 | --- | --- | --- | --- |
@@ -211,7 +211,7 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** Auf dem Westrücken liegen im Gras Reihen flacher Mulden, kaum knietief, in mehreren Reihen und im Abstand von je einem Schritt, zusammen mehrere hundert auf einer Länge von etwa zweihundert Schritt. Sie blicken alle auf dieselbe Stelle am Bach: die Furt. Für Menschen oder Zwerge sind sie zu klein, für Hobbits genau richtig.
 
-**Extraordinary Success:** Am Rand einer Mulde liegen mehrere kleine Steine, glatt gescheuert, wie man sie als Auflage für einen Knie- oder Ellbogenstand zurechtlegt.
+**_Extraordinary Success_:** Am Rand einer Mulde liegen mehrere kleine Steine, glatt gescheuert, wie man sie als Auflage für einen Knie- oder Ellbogenstand zurechtlegt.
 
 **Alternative:** Fuchsbauten, Schafpfade, ein verlassener Posten der Dúnedain.
 
@@ -219,7 +219,7 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** Im Bachbett und am Ufer der Furt liegen unter Schlamm und Gras rostige Pfeilspitzen, mehrere Hundert. Die meisten sind groß und schwer, Menschenwerk. Einige sind klein und leicht, kaum länger als ein Finger, mit einer zierlichen Widerhaken-Form.
 
-**Extraordinary Success:** Eine Handvoll dieser kleinen Spitzen liegt in einem Haufen, dort, wo einst ein Köcher lag, und gleich daneben liegt der nächste Haufen.
+**_Extraordinary Success_:** Eine Handvoll dieser kleinen Spitzen liegt in einem Haufen, dort, wo einst ein Köcher lag, und gleich daneben liegt der nächste Haufen.
 
 **Alternative:** Pfeile für Kinder, Jagdpfeile, Vogelpfeile aus späterer Zeit.
 
@@ -227,7 +227,7 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** In einer der Mulden liegt, grün angelaufen, eine kleine Gürtelschnalle aus Bronze mit Eisendorn. Sie ist so klein, dass sie nur einem Hobbit passt. Daneben liegt ein Wetzstein, dessen Rillen genau zur Breite kleiner Pfeilspitzen passen. Ein Zwerg oder Handwerker erkennt die Arbeit: schlicht, gut gegossen, für den täglichen Gebrauch gemacht.
 
-**Extraordinary Success:** In die Schnalle ist eine kleine Blume eingeritzt, wie sie Hobbits gern als Handwerkszeichen setzen.
+**_Extraordinary Success_:** In die Schnalle ist eine kleine Blume eingeritzt, wie sie Hobbits gern als Handwerkszeichen setzen.
 
 **Alternative:** Eine Kinderschnalle, Pferdegeschirr, ein Wetzstein von Schäfern aus späterer Zeit.
 
@@ -235,15 +235,15 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** Auf dem Relief in der Zitadelle ziehen Bogenschützen hinter dem Banner des Königs her. Hinter ihnen ist die Wand sorgfältig abgemeißelt: Dort standen weitere Gestalten, deren Umrisse noch zu ahnen sind. Sie waren klein, ungefähr halb so groß wie die Männer.
 
-**Extraordinary Success:** Ein Rest des Randmusters ist erhalten: Blätter und Ähren, Zeichen für das Land im Westen.
+**_Extraordinary Success_:** Ein Rest des Randmusters ist erhalten: Blätter und Ähren, Zeichen für das Land im Westen.
 
-**Alternative:** Die Gestalten waren Kinder, Troßknechte oder Zwerge, und der Zahn der Zeit hat den Rest erledigt.
+**Alternative:** Die Gestalten waren Kinder, Troßknechte oder Zwerge, und spätere Steinmetze oder Plünderer haben die Fläche für etwas anderes geglättet.
 
 ### E: Das Lied an der Wand (*Song*)
 
 **Fund:** Zwischen den Strichen und Zeichen in der Wand der Wegwacht stehen Verse, in Westron geritzt, kaum lesbar. Es sind nur die Anfangsworte einzelner Zeilen und darüber ein Vermerk: „Nach der Weise vom Rücken“. Wer *Song* beherrscht, erkennt das Versmaß und die Melodie von Mirabellas Lied, in einer älteren, ernsteren Form.
 
-**Extraordinary Success:** Der Held kann die fehlenden Zeilen aus dem Versmaß ergänzen, und sie handeln davon, dass jemand einen Hügel hielt, während die anderen zurückwichen.
+**_Extraordinary Success_:** Der Held kann die fehlenden Zeilen aus dem Versmaß ergänzen, und sie handeln davon, dass jemand einen Hügel hielt, während die anderen zurückwichen.
 
 **Alternative:** Ein Marschlied der Dúnedain, das der Melodie nur ähnelt, und der Held hört, was er hören will.
 
@@ -251,7 +251,7 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** Am Rand der Hügelgräber liegen in dichten Reihen über hundert schlichte Gräber, kleiner als die anderen, sorgfältig gepflegt, ohne Namen. Der Kalkboden hat die Knochen bewahrt, und sie sind klein. Einige tragen die Narben von Fingern, die immer wieder eine Sehne gezogen haben.
 
-**Extraordinary Success:** Neben vielen Gräbern liegt ein Stein, auf dem jemand vor Jahrzehnten, nicht vor Jahrhunderten, Blumen niedergelegt hat. Jemand pflegt diese Gräber noch.
+**_Extraordinary Success_:** Neben vielen Gräbern liegt ein Stein, auf dem jemand vor Jahrzehnten, nicht vor Jahrhunderten, Blumen niedergelegt hat. Jemand pflegt diese Gräber noch.
 
 **Alternative:** Kinder aus Bree, die hier gestorben sind, oder Zwerge, oder Menschen von kleinem Wuchs.
 
@@ -259,7 +259,7 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** Wer das Haus mit offenen Augen liest, bemerkt: Die Schießscharten, die Bank am Fenster und die Feuerstelle sind nach Süden gerichtet, auf die Straße ins Shire, nicht nach Norden, woher der Feind einst kam. Wer immer diesen Posten hält, hält Wache für die, die dort leben. Und jemand sorgt dafür, dass es nicht aufhört.
 
-**Extraordinary Success:** In einer Wandnische liegt ein Vorrat, sauber gestapelt und abgedeckt, für Gäste, die kommen könnten: Brot, Tee, ein Beutel Pfeifenkraut.
+**_Extraordinary Success_:** In einer Wandnische liegt ein Vorrat, sauber gestapelt und abgedeckt, für Gäste, die kommen könnten: Brot, Tee, ein Beutel Pfeifenkraut.
 
 **Alternative:** Ein Posten, der den Verkehr auf dem Greenway beobachtet, gegen Banditen und Reisende, nichts weiter.
 
@@ -267,7 +267,7 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** Er liegt am *Short Cut* auf der Reise (Teil 2). Wird dieser nicht ausgelöst, beginnt der Pfad am Südende des Westrückens. Der Pfad führt von den Feldern nach Süden und Südosten durch die Downs zum Greenway, mit Steinhaufen in Dreiergruppen. Der Weg wird gepflegt: Gras ist gemäht, Steine sind frisch gesetzt. Er ist der Weg, auf dem man unbemerkt von den Feldern nach Hause kam, ohne die Straße zu benutzen. Wer ihn geht, bleibt von Fornost aus unsichtbar.
 
-**Extraordinary Success:** Ein Stein trägt unter dem Moos eine alte Marke: einen Bogen und ein Blatt.
+**_Extraordinary Success_:** Ein Stein trägt unter dem Moos eine alte Marke: einen Bogen und ein Blatt.
 
 **Alternative:** Ein Schmugglerpfad, ein alter Schäferweg, ein Pfad der Dúnedain, der anderen Zwecken dient.
 
@@ -275,7 +275,7 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** Wer das Gelände als Soldat liest, erkennt: Der Bach zwingt Reiter an die Furt, und diese liegt genau im Schussfeld des Westrückens. Ein Hinterhalt, wie ihn ein erfahrener Kommandant plant, mit Schützen, die man nicht sieht.
 
-**Extraordinary Success:** Der Held erkennt, dass die Schützen den Hang sofort danach verlassen haben müssen, sonst wären sie umzingelt worden. Jemand hat ihnen den Rückzug gedeckt.
+**_Extraordinary Success_:** Der Held erkennt, dass die Schützen den Hang sofort danach verlassen haben müssen, sonst wären sie umzingelt worden. Jemand hat ihnen den Rückzug gedeckt.
 
 **Alternative:** Ein Zufall der Landschaft. Jeder Bach auf dieser Welt hat eine Furt.
 
@@ -283,7 +283,7 @@ Eine normale Probe reicht für jeden Hinweis. Ein *Extraordinary Success* liefer
 
 **Fund:** Auf dem Greenway erzählt die Schäferin Gerta (*Journey Event*, Teil 2), was ihre Großmutter ihr beigebracht hat: Man frage nicht nach den „Kleinen am Rücken“. Eine Antwort darauf hat nie jemand erhalten. Es ist keine Geschichte, sondern eine Regel.
 
-**Extraordinary Success:** Gerta erinnert sich an einen Reim, den ihre Großmutter manchmal summte und der dieselbe Melodie hat wie Mirabellas Lied.
+**_Extraordinary Success_:** Gerta erinnert sich an einen Reim, den ihre Großmutter manchmal summte und der dieselbe Melodie hat wie Mirabellas Lied.
 
 **Alternative:** Ein Aberglaube über Hügel und Gräber, wie es sie überall gibt.
 
