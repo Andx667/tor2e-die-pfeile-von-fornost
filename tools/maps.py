@@ -427,7 +427,260 @@ def map_example(lm):
     return bg
 
 
-MAPS = {"example": map_example}
+# ---------------------------------------------------------------- outdoor helpers
+def chaikin(pts, n=3):
+    for _ in range(n):
+        out = [pts[0]]
+        for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+            out += [(x0 * .75 + x1 * .25, y0 * .75 + y1 * .25), (x0 * .25 + x1 * .75, y0 * .25 + y1 * .75)]
+        out.append(pts[-1])
+        pts = out
+    return pts
+
+
+def offset_path(pts, d):
+    out = []
+    for i, (x, y) in enumerate(pts):
+        a, b = pts[max(0, i - 1)], pts[min(len(pts) - 1, i + 1)]
+        dx, dy = b[0] - a[0], b[1] - a[1]
+        L = math.hypot(dx, dy) or 1
+        out.append((x - dy / L * d, y + dx / L * d))
+    return out
+
+
+def road(pen, pts, width=22):
+    pts = chaikin(pts)
+    pen.d.line([sc(p) for p in pts], fill=(214, 196, 150), width=int(width * S), joint="curve")
+    for d in (-width / 2, width / 2):
+        pen.line(offset_path(pts, d), w=1.8, col=GREY, amp=0.8)
+
+
+def mound(pen, x, y, s=1.0, fill=(220, 207, 174)):
+    pts = [(x + 60 * s * math.cos(math.radians(a)), y - 28 * s * math.sin(math.radians(a))) for a in range(0, 181, 15)]
+    pen.d.polygon([sc(p) for p in pts], fill=fill)
+    pen.line(pts, w=2, col=INK, amp=0.6)
+    for i in range(-2, 3):
+        pen.line([(x + i * 14 * s, y - 20 * s * (1 - abs(i) / 3.4)), (x + i * 16 * s, y - 2 * s)], w=1.1, col=GREY, amp=0.3)
+
+
+def blob(pen, pts, fill, outline=INK):
+    pts = chaikin(pts, 3)
+    pen.d.polygon([sc(p) for p in pts], fill=fill)
+    pen.line(pts, w=2, col=outline, amp=0.8, closed=True)
+
+
+def hollow(pen, x, y, s=1.0):
+    pts = [(x - 7 * s * math.cos(math.radians(a)), y + 9 * s * math.sin(math.radians(a))) for a in range(-80, 81, 20)]
+    pen.line(pts, w=2, col=RED, amp=0.2)
+
+
+def ruin_wall(pen, pts, gaps=()):
+    for i, (a, b) in enumerate(zip(pts, pts[1:])):
+        if i in gaps:
+            continue
+        pen.line([a, b], w=5, col=INK, amp=1.0)
+        pen.line([a, b], w=2.5, col=(205, 194, 168), amp=0.4)
+
+
+def small_tower(pen, x, y, r=16):
+    pen.circle(x, y, r, fill=(205, 194, 168), outline=INK, w=3)
+
+
+def house(pen, x, y, w=60, h=38):
+    pen.rect(x - w / 2, y - h / 2, x + w / 2, y + h / 2, fill=(205, 194, 168), outline=INK, w=2.6, amp=0.5)
+    pen.line([(x - w / 2, y), (x + w / 2, y)], w=1.4, col=GREY, amp=0.3)
+
+
+def stream(pen, pts, width=16):
+    pts = chaikin(pts)
+    pen.d.line([sc(p) for p in pts], fill=(150, 176, 186), width=int(width * S), joint="curve")
+    for d in (-width / 2, width / 2):
+        pen.line(offset_path(pts, d), w=1.8, col=WATER, amp=0.8)
+
+
+def map_fornost(lm):
+    """Region overview: 1 Meile = 300 px. The battle was fought in the fields west of Fornost."""
+    seed = 11
+    bg = parchment(seed)
+    pen = Pen(bg, seed)
+    frame(pen)
+    # Fornost: city hill with the ruined citadel, bank and ditch (Deadmen's Dike) south of it
+    blob(pen, [(1130, 150), (1300, 110), (1460, 150), (1480, 270), (1360, 330), (1200, 330), (1120, 260)], (226, 214, 182))
+    for (x0, x1) in ((1040, 1265), (1315, 1560)):
+        pen.rect(x0, 428, x1, 446, fill=(196, 182, 148), outline=INK, w=2.4, amp=1.0)
+        pen.line([(x0, 462), (x1, 462)], w=1.6, col=GREY, amp=2.0)
+    ruin_wall(pen, [(1210, 180), (1390, 180), (1390, 280), (1210, 280), (1210, 180)], gaps=(1, 2))
+    small_tower(pen, 1210, 180, 13)
+    small_tower(pen, 1390, 280, 13)
+    rubble(pen, 1380, 200, 12, 24)
+    # Greenway from the south through the gap into the city
+    road(pen, [(1100, 1190), (1180, 960), (1250, 780), (1262, 600), (1285, 480), (1296, 380), (1300, 300)], 22)
+    # Wegwacht
+    house(pen, 1215, 610, 52, 34)
+    # barrow-field halfway between the battlefield and Fornost
+    rnd = random.Random(5)
+    for _ in range(13):
+        mound(pen, rnd.randint(840, 1060), rnd.randint(260, 400), rnd.uniform(.4, .65))
+    # the battlefield in the western fields: stream with one ford, ridge on its west bank
+    stream(pen, [(690, 120), (730, 300), (690, 440), (700, 520), (690, 600), (740, 760), (720, 920), (760, 1100)], 14)
+    blob(pen, [(520, 400), (590, 380), (630, 440), (632, 560), (610, 700), (560, 740), (530, 640), (515, 520)], (226, 214, 182))
+    for k in range(5):
+        pen.line([(540, 440 + k * 55), (572, 432 + k * 55)], w=1.2, col=GREY, amp=0.3)
+    pen.rect(684, 523, 704, 543, fill=(214, 196, 150), outline=GREY, w=1.4, amp=0.3)
+    # trees
+    for tx, ty in ((300, 880), (360, 940), (250, 1010), (900, 980), (980, 1060), (1100, 800), (380, 300), (320, 360)):
+        tree(pen, tx, ty, 1.1)
+    # labels
+    pen.text((1300, 70), "Fornost (Norbury of the Kings)", size=36)
+    pen.text((1440, 410), "Deadmen's Dike", size=34)
+    pen.text((1330, 800), "Greenway", size=32, rot=80)
+    pen.text((1250, 665), "Wegwacht", size=32)
+    pen.text((960, 200), "alte Hügelgräber", size=34)
+    pen.text((470, 230), "die Felder", size=44, col=GREY)
+    pen.text((640, 790), "Westrücken", size=32, rot=-80)
+    pen.text((775, 500), "Furt", size=30)
+    pen.text((1140, 1150), "nach Bree", size=32, col=GREY)
+    cartouche(pen, "Fornost und die Felder", "Nummern wie in Teil 4")
+    compass(pen)
+    scalebar(pen, "1 Meile", length=300)
+    pen.text((560, 1170), "Entfernungen im Feld nicht maßstäblich", size=24, col=GREY, halo=False)
+    if lm:
+        # route of the Hirtenpfad / Heimweg: Greenway to the southern end of the ridge (hint H)
+        pen.dashed([(1060, 1100), (900, 1000), (760, 880), (620, 760), (580, 700)], w=3)
+        pen.text((850, 930), "Hirtenpfad / Heimweg (H)", size=28, col=RED)
+        # sight line from Fornost's hill to the ford
+        pen.dashed([(1130, 270), (900, 400), (710, 520)], w=2, col=GREY, dash=8, gap=10)
+        pen.text((1010, 470), "Sichtweite", size=26, col=GREY, halo=False)
+        # hollows along the ridge crest and the arrows over the ford
+        for k in range(10):
+            hollow(pen, 610 + (k % 2) * 3, 430 + k * 24, 0.8)
+        pen.arrow([(640, 450), (686, 500)], w=2, col=RED, head=9)
+        pen.arrow([(640, 500), (686, 530)], w=2, col=RED, head=9)
+        pen.arrow([(640, 560), (686, 540)], w=2, col=RED, head=9)
+        # the little graves at the west rim of the barrow-field (hint F)
+        for i in range(4):
+            pen.rect(832 + i * 14, 392, 842 + i * 14, 402, fill=(205, 194, 168), outline=INK, w=1.2, amp=0.2)
+            pen.rect(832 + i * 14, 408, 842 + i * 14, 418, fill=(205, 194, 168), outline=INK, w=1.2, amp=0.2)
+        pen.text((850, 445), "kleine Gräber (F)", size=24, col=RED)
+        for (mx, my), n, hints in (((1150, 590), 1, "E, G"), ((760, 560), 2, "B, I"), ((540, 330), 3, "A, C"),
+                                    ((960, 280), 4, "F"), ((1300, 235), 5, "D")):
+            pen.marker((mx, my), n)
+            pen.text((mx, my + 38), hints, size=28, col=RED)
+        pen.text((850, 1150), "H, J auf der Reise", size=26, col=RED)
+    return bg
+
+
+def map_schlachtfeld(lm):
+    """Detail of the battlefield: 100 Schritt = 240 px."""
+    seed = 17
+    bg = parchment(seed)
+    pen = Pen(bg, seed)
+    frame(pen)
+    # ridge on the west bank of the stream
+    blob(pen, [(380, 260), (500, 230), (610, 270), (630, 480), (610, 760), (540, 860), (440, 830), (400, 560)], (226, 214, 182))
+    for k in range(9):
+        pen.line([(420, 300 + k * 60), (480, 290 + k * 60)], w=1.2, col=GREY, amp=0.3)
+    # stream with a single ford
+    stream(pen, [(1000, 100), (930, 300), (960, 480), (930, 620), (940, 780), (1010, 960), (990, 1120)], 28)
+    pen.rect(910, 560, 980, 640, fill=(214, 196, 150), outline=GREY, w=1.6, amp=0.4)
+    # steep banks: ticks along both banks except at the ford
+    for y in range(120, 1100, 38):
+        if 540 < y < 660:
+            continue
+        pen.line([(918, y), (906, y + 10)], w=1.2, col=GREY, amp=0.2)
+        pen.line([(982, y), (994, y + 10)], w=1.2, col=GREY, amp=0.2)
+    # grass tufts
+    rnd = random.Random(3)
+    for _ in range(40):
+        gx, gy = rnd.randint(120, 1480), rnd.randint(120, 1080)
+        if 340 < gx < 680 and 220 < gy < 880 or 880 < gx < 1050:
+            continue
+        pen.line([(gx, gy), (gx - 4, gy - 10)], w=1.2, col=GREY, amp=0.2)
+        pen.line([(gx, gy), (gx + 4, gy - 10)], w=1.2, col=GREY, amp=0.2)
+    pen.text((520, 205), "Westrücken", size=44)
+    pen.text((1180, 600), "Furt", size=40)
+    pen.text((1180, 150), "weite Felder", size=40, col=GREY)
+    pen.text((1200, 1060), "nach Fornost, gut zwei Meilen", size=28, col=GREY)
+    pen.arrow([(1450, 960), (1520, 900)], w=3, col=GREY, dashed=False)
+    pen.text((200, 960), "zur Wegwacht und zum Greenway", size=28, col=GREY)
+    cartouche(pen, "Das Schlachtfeld", "Orte 2 und 3 in Teil 4")
+    compass(pen)
+    scalebar(pen, "100 Schritt", length=240)
+    if lm:
+        # crest hollows
+        for k in range(24):
+            hollow(pen, 560 + (k % 3) * 8 - (k // 8) * 6, 300 + k * 22)
+        # arrows over the ford, riders come from the east
+        for yy in (400, 500, 600, 700):
+            pen.arrow([(640, yy), (900, 600 + (yy - 600) * 0.3)], w=2, col=RED, head=9)
+        pen.arrow([(1250, 560), (1000, 600)], w=4, col=RED)
+        pen.text((1140, 520), "Reiter von Angmar", size=28, col=RED)
+        # arrowheads in the streambed (B) and the buckle in a hollow (C)
+        for _ in range(26):
+            pen.line([(rnd.randint(935, 985), rnd.randint(560, 650)),
+                      (rnd.randint(935, 985), rnd.randint(560, 650))], w=1.8, col=INK, amp=0.2)
+        pen.text((1100, 690), "Pfeilspitzen im Bachbett (B)", size=26, col=RED)
+        pen.circle(560, 480, 6, fill=(120, 150, 110), outline=INK, w=1.6)
+        pen.text((470, 440), "Schnalle (C)", size=24, col=RED)
+        pen.text((520, 380), "Mulden (A)", size=26, col=RED)
+        pen.text((1120, 450), "Schussfeld (I)", size=26, col=RED)
+        # Heimweg: cairns in threes from the southern end of the ridge (H)
+        pts = [(520, 860), (480, 930), (430, 1000), (380, 1060)]
+        pen.dashed(pts, w=3)
+        for (cx, cy) in pts:
+            for dx, dy in ((-8, 0), (8, 0), (0, -12)):
+                pen.circle(cx + dx, cy + dy, 5, fill=STONE, outline=INK, w=1.4)
+        pen.text((330, 920), "Steinhaufen zu dritt (H)", size=26, col=RED)
+        pen.marker((960, 560), 2)
+        pen.marker((520, 540), 3)
+    return bg
+
+
+def map_wegwacht(lm):
+    seed = 13
+    bg = parchment(seed)
+    plan = Plan(seed)
+    plan.rect(320, 420, 780, 740)           # Wohnraum
+    plan.rect(780, 500, 1020, 740)          # Vorratsraum
+    plan.rect(320, 260, 560, 420)           # eingestürzter Anbau
+    plan.corridor([(540, 740), (540, 960)], 60)   # Eingang und Greenway
+    plan.paint(bg)
+    pen = Pen(bg, seed)
+    frame(pen)
+    # slits in the south wall, all facing the road
+    for x in (400, 650, 900):
+        pen.rect(x - 14, 734, x + 14, 746, fill=INK, outline=INK, w=1)
+    pen.text((900, 780), "Schießscharten nach Süden", size=26, col=GREY, halo=False)
+    # fireplace on the west wall
+    pen.rect(322, 540, 372, 600, fill=(120, 108, 98), outline=INK, w=2.4)
+    pen.d.polygon([sc(p) for p in [(347, 556), (358, 574), (352, 590), (342, 590), (336, 574)]], fill=(184, 98, 52))
+    # bench under the window and stacked wood
+    seat(pen, 650, 705, "n", 0.9)
+    seat(pen, 730, 705, "n", 0.9)
+    for i in range(4):
+        pen.rect(440 + i * 30, 440, 466 + i * 30, 470, fill=(214, 190, 150), outline=INK, w=1.6, amp=0.3)
+    pen.text((650, 600), "Wohnraum", size=44)
+    pen.text((900, 620), "Vorrat", size=40)
+    pen.text((440, 340), "eingestürzter Anbau", size=34)
+    rubble(pen, 480, 300, 22, 50)
+    pen.text((540, 900), "Greenway", size=34, rot=90)
+    cartouche(pen, "Die Wegwacht", "Ort 1 in Teil 4")
+    compass(pen)
+    scalebar(pen, "5 Schritt", length=200)
+    if lm:
+        pen.marker((600, 500), 1)
+        # tally marks and verses on the east wall (hint E)
+        for i in range(10):
+            pen.line([(776, 560 + i * 12), (770, 560 + i * 12 + 8)], w=1.6, col=RED, amp=0.2)
+        pen.text((700, 480), "geritzte Verse (E)", size=28, col=RED)
+        pen.line([(790, 490), (782, 520)], w=2, col=RED)
+        # supply niche (hint G, extraordinary success)
+        pen.rect(1008, 560, 1030, 600, fill=(220, 190, 170), outline=RED, w=2)
+        pen.text((930, 700), "Nische mit Vorrat (G)", size=26, col=RED)
+    return bg
+
+
+MAPS = {"example": map_example, "fornost": map_fornost, "schlachtfeld": map_schlachtfeld, "wegwacht": map_wegwacht}
 
 
 def render(name, lm):

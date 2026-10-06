@@ -9,3 +9,21 @@
 # title = "The Example"
 # subtitle = "numbers as in Part 1"
 # players = true
+
+[[maps]]
+id = "fornost"
+title = "Fornost und die Felder"
+subtitle = "Nummern wie in Teil 4"
+players = true
+
+[[maps]]
+id = "schlachtfeld"
+title = "Das Schlachtfeld"
+subtitle = "Orte 2 und 3 in Teil 4"
+players = true
+
+[[maps]]
+id = "wegwacht"
+title = "Die Wegwacht"
+subtitle = "Ort 1 in Teil 4"
+players = true

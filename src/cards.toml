@@ -4,7 +4,7 @@
 
 hint = "Cut out, poker card size (63 × 88 mm)"
 footer = ""
-order = ["example"]
+order = []
 
 terms = [
   "Famous Weapon", "Famous Armour", "Marvellous Artefact", "Core Rules", "Cunning Make",

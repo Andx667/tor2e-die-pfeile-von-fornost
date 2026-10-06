@@ -31,6 +31,8 @@ local TABLES = {
   ["Im Kampf"]  = { widths = { 0.24, 0.76 }, size = "small" },
   ["Name"]      = { widths = { 0.13, 0.17, 0.17, 0.24, 0.29 }, size = "small" },
   ["Volk"]      = { widths = { 0.16, 0.84 }, size = "small" },
+  ["Teil"]      = { widths = { 0.27, 0.12, 0.10, 0.51 }, size = "normal" },
+  ["Hinweis"]   = { widths = { 0.12, 0.30, 0.16, 0.42 }, size = "small" },
   -- English edition
   ["Part"]      = { widths = { 0.27, 0.12, 0.10, 0.51 }, size = "normal" },
   ["When"]      = { widths = { 0.21, 0.59, 0.20 }, size = "small" },
@@ -61,6 +63,7 @@ local function starts_with(s, prefix) return s:sub(1, #prefix) == prefix end
 local inline_pass = {
   Str = function(s)
     local word, punct = s.text:match("^(Skippable)(%p*)$")
+    if not word then word, punct = s.text:match("^(Überspringbar)(%p*)$") end
     if not word then word, punct = s.text:match("^(Optional)(%p*)$") end
     if word then
       local pill = rawi("\\fwskip{" .. word .. "}")
