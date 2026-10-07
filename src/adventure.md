@@ -14,12 +14,12 @@ Mirabella Took, über neunzig und in Tuckborough für ihren scharfen Verstand be
 | --- | --- | --- | --- |
 | 1. Der Auftrag | 20 min | 0:20 | Mirabella Took bittet um Hilfe |
 | 2. Die Straße | 30 min | 0:50 | Eine kurze *Journey* von Tuckborough nach Fornost |
-| 3. Die Downs | 20 min | 1:10 | Ankunft und die Wegwacht |
-| 4. Das Schlachtfeld | 125 min | 3:15 | Fünf Orte, acht der zehn Hinweise |
+| 3. Die Downs | 20 min | 1:10 | Ankunft und das Lager |
+| 4. Das Schlachtfeld | 125 min | 3:15 | Vier Orte, sechs der neun Hinweise |
 | 5. Das Mosaik zusammensetzen | 25 min | 3:40 | Die Gefährten legen sich ihre Schlüsse zurecht |
 | Nachspiel | 20 min | 4:00 | Was sie Mirabella sagen |
 
-**Hinweis für den Loremaster:** Das Abenteuer ist ein Sandkasten. Die Gruppe wählt die Reihenfolge der Orte selbst. Zwei der zehn Hinweise (*H* und *J*) liegen auf der Reise, die übrigen acht an den Orten (siehe Anhang). Du entscheidest vor der Sitzung, welche du verwendest. Wenn die Zeit knapp wird, kürze in dieser Reihenfolge: die Reise, die Ankunft in Teil 3, einen der Orte in Teil 4. Kürze nie Teil 5.
+**Hinweis für den Loremaster:** Das Abenteuer ist ein Sandkasten. Die Gruppe wählt die Reihenfolge der Orte selbst. Zwei der neun Hinweise (*F* und *H*) liegen auf der Reise, sechs an den Orten, und einer (*I*) hängt an dem Waldläufer, der die Gruppe beobachtet (siehe Anhang). Du entscheidest vor der Sitzung, welche du verwendest. Wenn die Zeit knapp wird, kürze in dieser Reihenfolge: die Reise, die Ankunft in Teil 3, einen der Orte in Teil 4. Kürze nie Teil 5.
 
 **Hinweis für den Loremaster:** Nichts in diesem Abenteuer wird je bestätigt. Kein NSC sagt: „Ja, sie waren dabei.“ Jeder Hinweis lässt eine harmlose Erklärung zu, und der Anhang nennt sie dir. Die Spieler sollen auf Grund von Hinweisen glauben, nicht auf Grund von Aussagen.
 
@@ -29,7 +29,7 @@ Mirabella Took, über neunzig und in Tuckborough für ihren scharfen Verstand be
 
 Im Frühjahr TA 1975 stellte sich ein Heer aus Gondor unter Eärnil, verstärkt von Círdans Elben aus Lindon, dem Hexenkönig von Angmar vor Fornost. Eine Schar von etwa fünfhundert Hobbit-Bogenschützen aus dem ganzen Shire, bei einer Bevölkerung von rund 100.000, war mit dem Heer gezogen. Die Schlacht fand nicht an den Mauern von Fornost statt, sondern in den Feldern gut zwei Meilen westlich davon, in Sichtweite der Stadt. Die Hobbits hielten dort eine Anhöhe über einem Bach, der nur an einer Furt zu überqueren war, und schossen von dort in die Flanke der Orks von Angmar, die die Furt zu einem engen Nadelöhr zwang. Ein paar Wölfe liefen mit, aber niemand ritt sie. Viele fielen, die meisten kehrten heim, nicht über den Greenway und durch Bree, sondern auf einem eigenen, geraden Pfad quer durch Eriador zur Brandywine Bridge, mit Steinhaufen in Dreiergruppen als Wegmarken.
 
-Der Hexenkönig floh nach Mordor. Die Dúnedain, die Elben und ein paar Hobbits einigten sich danach darauf, die Schützen aus den Berichten zu streichen. Der Feind sollte nicht erfahren, dass es im Westen ein kleines, friedliches Volk gab, das mit Bögen umgehen konnte, und vor allem nicht, wo es lebte. Sauron war nicht besiegt, nur fort, und sein Blick suchte jedes Land, das er einmal angreifen könnte. Also tilgte man alles, was zum Shire führt: Namen, Herkunft, Wege. Die gefallenen Schützen wurden namenlos und ohne Zeichen begraben, ihr Wappen verschwand von den Siegesbildern in der Zitadelle, und der Heimweg blieb eine Spur ohne Straße. Die Dúnedain bewachen das Shire bis heute, ohne dass es die meisten Hobbits wissen. Die Hobbits selbst machten kein Geheimnis daraus und erzählten stolz von ihrer Tat, in Reimen und Familiengeschichten. Außerhalb des Shire hörte man darüber hinweg: Die Dúnedain und Elben schwiegen, und die Menschen, die davon hörten, hielten es für Hobbit-Prahlerei. Das Schweigen gehört den anderen, nicht den Hobbits.
+Der Hexenkönig floh nach Mordor. Die Dúnedain, die Elben und ein paar Hobbits einigten sich danach darauf, die Schützen aus den Berichten zu streichen. Der Feind sollte nicht erfahren, was in diesem kleinen, friedlichen Volk steckte: dass es mit Bögen umgehen konnte, dass es zusammenstand, wenn man es rief, und dass es mit Mut und Witz mehr vermochte, als seine Größe versprach. Wo das Shire lag, war kein Geheimnis, es lag seit Jahrhunderten an der Straße nach Bree. Es sollte nur als harmlos gelten. Sauron war nicht besiegt, nur im Verborgenen, und sein Blick suchte nach Stärke, nach Verbündeten und nach Land, das er einmal angreifen könnte. Also tilgte man alles, was die Hobbits gefährlich wirken ließ, und streute das Gegenteil: Namen, Zahl, Wappen und Heimweg verschwanden, und aus den Schützen wurden „Pfeifenraucher und Bauern“. Die gefallenen Schützen wurden namenlos und ohne Zeichen begraben, ihr Wappen verschwand von den Siegesbildern in der Zitadelle, und der Heimweg blieb eine Spur ohne Straße, damit niemand sah, wie viele kamen und gingen. Mirabellas Klage über die Pfeifenraucher und Bauern ist also zum Teil das Ergebnis dessen, was sie beweisen will. Die Dúnedain bewachen das Shire bis heute, ohne dass es die meisten Hobbits wissen. Die Hobbits selbst machten kein Geheimnis daraus und erzählten stolz von ihrer Tat, in Reimen und Familiengeschichten. Außerhalb des Shire hörte man darüber hinweg: Die Dúnedain und Elben schwiegen, und die Menschen, die davon hörten, hielten es für Hobbit-Prahlerei. Das Schweigen gehört den anderen, nicht den Hobbits.
 
 Das ist die Wahrheit hinter den Hinweisen. Die Spieler bekommen sie nie bestätigt.
 
@@ -91,11 +91,11 @@ Die Gefährten dürfen fragen, was sie wollen. Antworten, die sie mit *Insight* 
 
 ### *Journey* Events
 
-- **Gerta** (*Chance-meeting*): Auf dem Greenway nördlich von Bree treffen die Gefährten **Gerta**, eine Schäferin aus dem Bree-land, die ihre Herde auf die Winterweide treibt. Sie ist freundlich und redselig und fragt nach dem Ziel. Wenn die Gefährten Fornost nennen, erzählt sie, was man in Bree den Kindern sagt, damit sie nicht allein in den Wald oder auf die Hügel der Weather Hills laufen: „Bleib weg von den Kleinen auf der Höhe, die sehen dich, und du siehst sie nicht.“ Wer die Kleinen sind, weiß sie nicht, und woher der Spruch kommt, auch nicht. Schon ihre Großmutter sagte ihn. Das ist **Hinweis J** (*Courtesy*). Sie warnt vor den alten Hügelgräbern bei Fornost: „Da wird einem kalt, auch wenn die Sonne scheint.“ Wird kein *Chance-meeting* ausgelöst, lässt du Hinweis J weg.
-- **Ein stiller Schatten** (*Chance-meeting*): Ein Ranger beobachtet die Gruppe von weitem und verschwindet, wenn sie sich ihm nähern. Es ist ein Wächter der Dúnedain. Er greift nicht ein und redet nicht.
+- **Gerta** (*Chance-meeting*): Auf dem Greenway nördlich von Bree treffen die Gefährten **Gerta**, eine Schäferin aus dem Bree-land, die ihre Herde auf die Winterweide treibt. Sie ist freundlich und redselig und fragt nach dem Ziel. Wenn die Gefährten Fornost nennen, erzählt sie, was man in Bree den Kindern sagt, damit sie nicht allein in den Wald oder auf die Hügel der Weather Hills laufen: „Bleib weg von den Kleinen auf der Höhe, die sehen dich, und du siehst sie nicht.“ Wer die Kleinen sind, weiß sie nicht, und woher der Spruch kommt, auch nicht. Schon ihre Großmutter sagte ihn. Das ist **Hinweis H** (*Courtesy*). Sie warnt vor den alten Hügelgräbern bei Fornost: „Da wird einem kalt, auch wenn die Sonne scheint.“ Wird kein *Chance-meeting* ausgelöst, lässt du Hinweis H weg.
+- **Ein stiller Schatten** (*Chance-meeting*): Ein Ranger beobachtet die Gruppe von weitem und verschwindet, wenn sie sich ihm nähern. Es ist ein Wächter der Dúnedain. Er greift nicht ein und redet nicht. Wer ihn genauer beobachtet, kann hier schon **Hinweis I** finden (*Insight*, siehe Anhang).
 - **Goldenes Licht am Greenway** (*Joyful Sight*): Im Spätnachmittagslicht stehen die Buchen von Chetwood in Gold. Es gibt einen Rastplatz am Wegrand, ein Feuer, Platz für ein Lied.
 - **Nebel und Nässe** (*Mishap*): Der Nebel fällt, die Vorräte werden feucht, und der Greenway verschwindet im Grau.
-- **Der Hirtenpfad** (*Short Cut*): Ein schmaler Pfad zweigt vom Greenway nach Nordwesten ab, führt über die Downs zu den Feldern westlich von Fornost und spart einen Tag. Auf halbem Weg quert er in einer Senke einen zweiten, viel älteren Pfad, kaum mehr als eine Spur im Heidekraut, mit kleinen Steinhaufen, immer zu dritt. Das ist der Anfang von **Hinweis H** (siehe Anhang). Wer dem Steinpfad folgt, merkt, dass er nicht dem Greenway folgt, sondern geradewegs nach Südwesten läuft.
+- **Der Hirtenpfad** (*Short Cut*): Ein schmaler Pfad zweigt vom Greenway nach Nordwesten ab, führt über die Downs zu den Feldern westlich von Fornost und spart einen Tag. Auf halbem Weg quert er in einer Senke einen zweiten, viel älteren Pfad, kaum mehr als eine Spur im Heidekraut, mit kleinen Steinhaufen, immer zu dritt. Das ist der Anfang von **Hinweis F** (siehe Anhang). Wer dem Steinpfad folgt, merkt, dass er nicht dem Greenway folgt, sondern geradewegs nach Südwesten läuft.
 - **Eine Weggabelung** (*Ill Choices*): Ein Händler in Bree verkauft den Gefährten eine „Karte nach Fornost“, die sie auf einen Umweg über sumpfiges Land führt. Es ist keine Falle, nur ein Geschäft, das ihnen Zeit und Vorräte kostet.
 - **Der verfallene Greenway** (*Despair*): Umgestürzte Meilensteine, überwucherte Pflaster, ein Königsweg, den niemand mehr pflegt. Die Gefährten spüren, wie klein sie sind und wie lange das alles her ist. Niemand weiß mehr, wer hier gegangen ist.
 - **Strauchdiebe** (*Terrible Misfortune*): Ein Trupp Wegelagerer, der Hobbits für leichte Beute hält, lauert in einem Hohlweg am Greenway. Nutze dafür einen Eintrag für Banditen oder Strauchdiebe aus den *Core Rules*.
@@ -108,73 +108,73 @@ Die Gefährten dürfen fragen, was sie wollen. Antworten, die sie mit *Insight* 
 
 ### Ankunft
 
-Am Abend erreichen die Gefährten die **Wegwacht**, den alten Zollposten am Greenway, eine Meile südlich der Ruinen und zwei Meilen östlich der Felder, auf denen die Schlacht geschlagen wurde (Ort 1 in Teil 4). Nach dem Sieg hielten die Dúnedain den Posten noch einige Jahre. Seit sie fort sind, gibt es hier nichts mehr zu verzollen, und niemand lebt dort. Es ist ein halb verfallenes Steinhaus mit einem trockenen Dach und einer Feuerstelle, ihr Quartier für die Nacht. Von hier aus erkunden sie die Downs.
+Am Abend schlagen die Gefährten ihr Lager auf: in einer windgeschützten Senke am Greenway, eine Meile südlich der Ruinen und zwei Meilen östlich der Felder, auf denen die Schlacht geschlagen wurde. Ein paar alte Mauersteine geben Schutz vor dem Wind, und für ein Feuer liegt genug dürres Holz herum. Von hier aus erkunden sie die Downs.
 
 ## Teil 4: Das Schlachtfeld {#part4}
 
-*Etwa 125 Minuten.* Fünf Orte liegen im Umkreis von einem halben Tag. Die Gefährten wählen die Reihenfolge. Jeder Ort braucht etwa 25 Minuten. Die möglichen Hinweise stehen bei jedem Ort, höchstens zwei pro Ort. Du entscheidest vor der Sitzung, welche du verwendest. *J* findet die Gruppe auf der Reise (Teil 2), *H* ebenfalls, ersatzweise auf der Westhöhe. Fertigkeit, Fund und Alternativerklärung stehen im Anhang.
+*Etwa 125 Minuten.* Vier Orte liegen im Umkreis von einem halben Tag. Die Gefährten wählen die Reihenfolge. Jeder Ort braucht etwa 30 Minuten. Die möglichen Hinweise stehen bei jedem Ort, höchstens zwei pro Ort. Du entscheidest vor der Sitzung, welche du verwendest. *H* findet die Gruppe auf der Reise (Teil 2), *F* ebenfalls, ersatzweise auf der Westhöhe. *I* gehört zu keinem Ort (siehe „Der Wächter“ unten). Fertigkeit, Fund und Alternativerklärung stehen im Anhang.
 
 **Erfahrung:** Der erste gefundene Hinweis bringt jedem Helden 1 *Skill Point*, der dritte 2 *Skill Points*, der sechste 3 *Skill Points*.
 
-### 1. Die Wegwacht
-
-Der frühere Zollposten vor Fornost: ein Steinhaus mit zwei Räumen, einem Kamin und einem eingestürzten Anbau. Aus den Schießscharten in der Südwand behielten die Zöllner den Greenway im Auge. Heute ist es ein Unterschlupf für alle, die hier vorbeikommen: Reisende, Hirten, gelegentlich ein Waldläufer. Es ist unbewohnt, aber nicht verlassen. Holz liegt gestapelt, die Feuerstelle ist sauber gekehrt, und in die Wand sind Striche und Zeichen geritzt, Besuche vieler Jahre.
-
-Mögliche Hinweise: **E** (*Lore*: das Lied an der Wand), **G** (*Insight*: die Zolltafel).
-
-### 2. Die Furt
+### 1. Die Furt
 
 Ein namenloser Bach windet sich durch die Felder westlich von Fornost, mit steilen, lehmigen Ufern und nur einer flachen Stelle zum Durchwaten: der Furt. Das Land ringsum ist weites Grasland, in dem Knochen, Wolfsschädel und rostiges Eisen liegen. Hier wurde die Schlacht geschlagen, nicht an den Mauern der Stadt. Von der Furt aus sieht man Fornost als Hügel am Horizont, gut zwei Meilen entfernt, und die Westhöhe liegt zweihundert Schritt weiter westlich.
 
-Mögliche Hinweise: **B** (*Explore*: Pfeilspitzen im Bachbett), **I** (*Battle*: das Schussfeld).
+Mögliche Hinweise: **B** (*Explore*: Pfeilspitzen im Bachbett), **G** (*Battle*: das Schussfeld).
 
 **Optionale Erweiterung – Ein Fehltritt:** Wer die steile Uferböschung ohne Seil hinabsteigt, braucht einen *Athletics*-Wurf. Bei einem Misserfolg rutscht er ab und verliert 2 *Endurance*. Ein Gefährte kann ihm helfen.
 
-### 3. Die Westhöhe
+### 2. Die Westhöhe
 
-Ein langer, niedriger Höhenzug in den Feldern westlich der Furt, bewachsen mit hohem Gras und Heide, zwei Meilen westlich der Wegwacht. Von hier hat man die Furt im Blick und weit im Osten den Hügel von Fornost. Dazwischen liegt nichts als Gras.
+Ein langer, niedriger Höhenzug in den Feldern westlich der Furt, bewachsen mit hohem Gras und Heide, zwei Meilen westlich des Greenway. Von hier hat man die Furt im Blick und weit im Osten den Hügel von Fornost. Dazwischen liegt nichts als Gras.
 
-Mögliche Hinweise: **A** (*Scan*: die Schützenmulden), **C** (*Craft*: die Bronzeschnalle in einer der Mulden). Wurde der *Short Cut* nicht gewählt, kann hier auch **H** (*Travel*: der Beginn des vergessenen Pfades) liegen.
+Mögliche Hinweise: **A** (*Scan*: die Schützenmulden), **C** (*Craft*: die Bronzeschnalle in einer der Mulden). Wurde der *Short Cut* nicht gewählt, kann hier auch **F** (*Travel*: der Beginn des vergessenen Pfades) liegen.
 
 > *Von hier aus ist die Furt nicht weit. Ein Hobbit könnte im Gras hocken und den Bach im Blick haben, ohne dass ihn jemand vom anderen Ufer aus sieht.*
 
-### 4. Die Hügelgräber
+### 3. Die Hügelgräber
 
 Ein weites Feld mit überwachsenen Hügeln auf halbem Weg zwischen den Schlachtfeldern und Fornost. Die Hügel sind älter als die Schlacht. Am Westrand, den Feldern zugewandt, begrub man nach der Schlacht die Gefallenen, und manche Gräber sind jünger als andere.
 
-Mögliche Hinweise: **F** (*Healing*: kleine Gräber, kostet jeden Zeugen 1 *Shadow*-Punkt, siehe Anhang).
+Mögliche Hinweise: **E** (*Healing*: kleine Gräber, kostet jeden Zeugen 1 *Shadow*-Punkt, siehe Anhang).
 
 **Die Gefahr:** Dies ist der gefährlichste Ort des Abenteuers, und die Gefahr hat mit der Geschichte der Schlacht nichts zu tun. Zwischen den alten Hügeln liegt ein **Grabunhold** (*barrow-wight*), ein Geist, der an die Grabhügel gebunden ist und mit den Toten der Schlacht nichts zu tun hat. Er ist älter als Fornost, und er will nur, dass niemand die Hügel betritt. Je länger die Gefährten bleiben, desto kälter wird es. Ein Nebel steigt aus dem Gras, die Sonne scheint dünn, und plötzlich ist einer von ihnen allein und hört eine Stimme, die seinen Namen kennt.
 
 Der Angriff dient keinem Zweck der Geschichte: Die Gefährten gewinnen weder Hinweis noch Erkenntnis, wenn sie ihn besiegen oder vertreiben. Lass sie sich entscheiden: fliehen, kämpfen oder durchhalten. Verwende dafür den Eintrag für den *barrow-wight* aus den *Core Rules* und die dortigen Regeln für *Shadow* und Furcht. Der Ort ist gefährlich, aber nicht tödlich gemeint: Wer die Hügel verlässt, den lässt er ziehen.
 
-### 5. Die Zitadelle von Fornost
+### 4. Die Zitadelle von Fornost
 
 Die Ruinen der alten Königsstadt: abgebrochene Mauern, Treppen, die ins Nichts führen. Hier saß einst König Arvedui. In einer Seitenhalle ließen die Dúnedain nach dem Sieg ein Relief in die Wand meißeln, das die verbündeten Heere unter ihren Bannern zeigt.
 
 Mögliche Hinweise: **D** (*Lore* oder *Riddle*: das abgemeißelte Relief).
 
-**Das Rätsel im Staub:** Wer das Relief untersucht, bemerkt, dass jemand an einer Stelle sorgfältig gearbeitet hat, nicht mit Hass, sondern mit Handwerk. Ein *Craft*-Wurf zeigt, dass die Meißelspuren sauber und überlegt gesetzt sind, eher Handwerk als Zerstörungswut: Das war Absicht. Wer das tat, wollte nicht die Schützen tilgen, sondern verbergen, woher sie kamen.
+**Das Rätsel im Staub:** Wer das Relief untersucht, bemerkt, dass jemand an einer Stelle sorgfältig gearbeitet hat, nicht mit Hass, sondern mit Handwerk. Ein *Craft*-Wurf zeigt, dass die Meißelspuren sauber und überlegt gesetzt sind, eher Handwerk als Zerstörungswut: Das war Absicht. Wer das tat, wollte nicht die Schützen tilgen, sondern verbergen, wer sie waren.
+
+### Der Wächter
+
+Irgendwann an diesem Tag, an einem Ort deiner Wahl, bemerken die Gefährten eine Gestalt in grauem Mantel auf einer Kuppe, einen Bogenschuss entfernt. Es ist derselbe Waldläufer wie auf der Reise, oder ein anderer, das lässt sich nicht sagen. Er kommt nicht näher, antwortet auf keinen Ruf und ist fort, sobald jemand auf ihn zugeht. Er ist kein Gegner und kein Zeuge: Er sagt nichts, bestätigt nichts und lässt sich nicht stellen.
+
+Mögliche Hinweise: **I** (*Insight*: wohin der Wächter schaut).
 
 ## Teil 5: Das Mosaik zusammensetzen {#part5}
 
-*Etwa 25 Minuten.* Am Abend sammelt die Gruppe ihre Funde, am besten in der Wegwacht oder an einem Lagerfeuer in den Downs. Lass die Spieler selbst entscheiden, was sie glauben.
+*Etwa 25 Minuten.* Am Abend sammelt die Gruppe ihre Funde, am besten am Lagerfeuer in den Downs. Lass die Spieler selbst entscheiden, was sie glauben.
 
 Lege die Hinweise nacheinander auf den Tisch. Bitte die Spieler, sie zu ordnen:
 
-1. **Waren Hobbits dort?** (Hinweise *A*, *B*, *C*, *E*, *H*)
-2. **Haben sie etwas bewirkt?** (Hinweise *F*, *G*, *I*, *J*, außerdem *A*)
-3. **Warum hat man geschwiegen, und was sollte geschützt werden?** (Hinweise *D*, *F*, *G*, *H*, *J*)
+1. **Waren Hobbits dort?** (Hinweise *A*, *B*, *C*, *F*)
+2. **Haben sie etwas bewirkt?** (Hinweise *E*, *G*, *H*, außerdem *A*)
+3. **Warum hat man geschwiegen, und was sollte geschützt werden?** (Hinweise *D*, *E*, *F*, *H*, *I*)
 
 Wenn die Gruppe mindestens sechs Hinweise gesammelt hat, mit mindestens zwei zu jeder Frage, fügen sich die Teile zu einem Bild. Wenn sie weniger hat, ist das Bild unvollständig. Beides ist in Ordnung.
 
-**Hinweis für den Loremaster:** Die Antwort auf die dritte Frage steckt im Muster, nicht in einem einzelnen Hinweis: Es fehlen Namen (*F*), Herkunft (*D*), der Heimweg (*H*) und die Erinnerung der Nachbarn (*J*), und ein Posten winkt sie wohlwollend durch (*G*). Alles, was den Feind zum Shire führen könnte, ist getilgt. Wenn die Gruppe das Muster nicht selbst sieht, frage: „Was haben alle diese Spuren gemeinsam?“ Sag nicht, wer es getan hat.
+**Hinweis für den Loremaster:** Die Antwort auf die dritte Frage steckt im Muster, nicht in einem einzelnen Hinweis: Es fehlen Namen (*E*), Herkunft (*D*), der Heimweg (*F*) und die Erinnerung der Nachbarn (*H*). Alles, was einen fremden Späher auf den Gedanken bringen könnte, dass vom Shire etwas zu befürchten ist, ist getilgt oder kleingeredet: wer die Schützen waren, wie viele es waren, wie sie kämpften und wie sie heimzogen. Das Shire selbst ist kein Geheimnis, nur seine Stärke, sein Zusammenhalt und sein Witz. Der Grund ist nirgends ausgesprochen, aber er schimmert durch: eine Zeile am Relief (*D*), ein Pfad, der sich vor Blicken duckt (*F*), ein Spruch, der Fremden das Kleinreden beibringt (*H*), ein Wächter, der nicht die Gefährten im Auge hat, sondern die Straße hinter ihnen (*I*). Das alles richtet sich nicht gegen die Hobbits, sondern soll sie vor jemandem schützen, der nach Stärke suchte. Es erklärt auch, warum Mirabella überall nur „Pfeifenraucher und Bauern“ hört. Wenn die Gruppe das Muster nicht selbst sieht, frage: „Was haben alle diese Spuren gemeinsam?“ und dann: „Vor wem sollte das Shire schwach und harmlos wirken?“ Nenne den Feind nicht beim Namen: Die Spieler sollen ihn selbst benennen, oder es bei „dem Feind im Osten“ belassen. Sag nicht, wer es getan hat.
 
 **Hinweis für den Loremaster:** Bestätige nichts. Wenn die Spieler fragen, ob sie recht haben, antworte als Spielleiter: „Das könnt ihr nicht wissen. Aber es passt.“ Jeder Hinweis hat eine Alternativerklärung im Anhang. Nutze sie, wenn ein Spieler auf Gewissheit drängt.
 
 ### Der Aufbruch
 
-Beim Aufbruch am nächsten Morgen sehen die Gefährten weit oben auf einem Hügel eine einzelne Gestalt stehen, die Hand zum Gruß erhoben. Sie kommt nicht näher, und als die Gefährten sich umdrehen, ist sie fort. Das ist weder Bestätigung noch Leugnung.
+Beim Aufbruch am nächsten Morgen sehen die Gefährten weit oben auf einem Hügel eine einzelne Gestalt in grauem Mantel stehen, die Hand zum Gruß erhoben. Sie kommt nicht näher, und als die Gefährten sich umdrehen, ist sie fort. Das ist weder Bestätigung noch Leugnung.
 
 ## Nachspiel {#epilogue}
 
@@ -190,11 +190,11 @@ Mögliche Ausgänge, die du vorlesen kannst, je nach dem, was die Gruppe beschli
 
 In allen Fällen: Irgendwo weit im Norden steht ein Ranger an einem Feuer und sieht nach Süden.
 
-## Anhang: Die zehn Hinweise {#hinweise .nonotes}
+## Anhang: Die neun Hinweise {#hinweise .nonotes}
 
-Die Hinweise *A* bis *J* sind ein Vorrat. Wähle vor der Sitzung, welche du verwendest und wo sie liegen. Mit zehn Hinweisen hast du mehr, als die Gruppe in der Zeit finden kann. Zu jedem Hinweis gibt es einen Zettel im Anhang „Fundzettel“. Die Fertigkeiten sind absichtlich verschieden, damit jeder Held etwas beitragen kann.
+Die Hinweise *A* bis *I* sind ein Vorrat. Wähle vor der Sitzung, welche du verwendest und wo sie liegen. Mit neun Hinweisen hast du mehr, als die Gruppe in der Zeit finden kann. Zu jedem Hinweis gibt es einen Zettel im Anhang „Fundzettel“. Die Fertigkeiten sind absichtlich verschieden, damit jeder Held etwas beitragen kann.
 
-Ein gelungener Wurf reicht für jeden Hinweis. Ein *Extraordinary Success* liefert einen Zusatz, den jeder Eintrag unten nennt. Ein Misserfolg verbaut den Hinweis nicht: Die Gefährten können es später noch einmal versuchen, oder ein anderer Held übernimmt.
+Ein gelungener Wurf reicht für jeden Hinweis. Ein *Great Success* liefert einen Zusatz, den jeder Eintrag unten nennt. Ein Misserfolg verbaut den Hinweis nicht: Die Gefährten können es später noch einmal versuchen, oder ein anderer Held übernimmt.
 
 | Hinweis | Fund | Fertigkeit | Stützt |
 | --- | --- | --- | --- |
@@ -202,18 +202,17 @@ Ein gelungener Wurf reicht für jeden Hinweis. Ein *Extraordinary Success* liefe
 | B | Pfeilspitzen im Bachbett | *Explore* | Hobbits waren dort |
 | C | Die Bronzeschnalle | *Craft* | Hobbits waren dort |
 | D | Das abgemeißelte Relief | *Lore* oder *Riddle* | Das Schweigen war gewollt |
-| E | Das Lied an der Wand | *Lore* | Hobbits waren dort |
-| F | Die kleinen Gräber | *Healing* | Das Schweigen war gewollt, sie haben etwas bewirkt |
-| G | Die Zolltafel | *Insight* | Das Schweigen war gewollt, sie haben etwas bewirkt |
-| H | Der vergessene Pfad | *Travel* | Hobbits waren dort, das Schweigen war gewollt |
-| I | Das Schussfeld | *Battle* | Sie haben etwas bewirkt |
-| J | Der Kinderspruch | *Courtesy* | Das Schweigen war gewollt, sie haben etwas bewirkt |
+| E | Die kleinen Gräber | *Healing* | Das Schweigen war gewollt, sie haben etwas bewirkt |
+| F | Der vergessene Pfad | *Travel* | Hobbits waren dort, das Schweigen war gewollt |
+| G | Das Schussfeld | *Battle* | Sie haben etwas bewirkt |
+| H | Der Kinderspruch | *Courtesy* | Das Schweigen war gewollt, sie haben etwas bewirkt |
+| I | Der Wächter | *Insight* | Das Schweigen war gewollt |
 
 ### A: Die Schützenmulden (*Scan*)
 
 **Fund:** Auf der Westhöhe liegen im Gras Reihen flacher Mulden, kaum knietief, in mehreren Reihen und im Abstand von je einem Schritt, zusammen mehrere hundert auf einer Länge von etwa zweihundert Schritt. Sie blicken alle auf dieselbe Stelle am Bach: die Furt. Für Menschen oder Zwerge sind sie zu klein, für Hobbits genau richtig.
 
-**_Extraordinary Success_:** Am Rand einer Mulde liegen mehrere kleine Steine, glatt gescheuert, wie man sie als Auflage für einen Knie- oder Ellbogenstand zurechtlegt.
+**_Great Success_:** Am Rand einer Mulde liegen mehrere kleine Steine, glatt gescheuert, wie man sie als Auflage für einen Knie- oder Ellbogenstand zurechtlegt.
 
 **Alternative:** Fuchsbauten, Schafpfade, ein verlassener Posten der Dúnedain.
 
@@ -221,7 +220,7 @@ Ein gelungener Wurf reicht für jeden Hinweis. Ein *Extraordinary Success* liefe
 
 **Fund:** Im Bachbett und am Ufer der Furt liegen unter Schlamm und Gras rostige Pfeilspitzen, mehrere Hundert. Die meisten sind groß und schwer, Menschenwerk. Einige sind klein und leicht, kaum länger als ein Finger, mit einer zierlichen Widerhaken-Form.
 
-**_Extraordinary Success_:** Eine Handvoll dieser kleinen Spitzen liegt in einem Haufen, dort, wo einst ein Köcher lag, und gleich daneben liegt der nächste Haufen.
+**_Great Success_:** Eine Handvoll dieser kleinen Spitzen liegt in einem Haufen, dort, wo einst ein Köcher lag, und gleich daneben liegt der nächste Haufen.
 
 **Alternative:** Pfeile für Kinder, Jagdpfeile, Vogelpfeile aus späterer Zeit.
 
@@ -229,7 +228,7 @@ Ein gelungener Wurf reicht für jeden Hinweis. Ein *Extraordinary Success* liefe
 
 **Fund:** In einer der Mulden liegt, grün angelaufen, eine kleine Gürtelschnalle aus Bronze mit Eisendorn. Sie ist so klein, dass sie nur einem Hobbit passt. Daneben liegt ein Wetzstein, dessen Rillen genau zur Breite kleiner Pfeilspitzen passen. Ein Zwerg oder Handwerker erkennt die Arbeit: schlicht, gut gegossen, für den täglichen Gebrauch gemacht.
 
-**_Extraordinary Success_:** In die Schnalle ist eine kleine Blume eingeritzt, wie sie Hobbits gern als Handwerkszeichen setzen.
+**_Great Success_:** In die Schnalle ist eine kleine Blume eingeritzt, wie sie Hobbits gern als Handwerkszeichen setzen.
 
 **Alternative:** Eine Kinderschnalle, Pferdegeschirr, ein Wetzstein von Schäfern aus späterer Zeit.
 
@@ -237,84 +236,75 @@ Ein gelungener Wurf reicht für jeden Hinweis. Ein *Extraordinary Success* liefe
 
 **Fund:** Auf dem Relief in der Zitadelle ziehen die Heere unter ihren Bannern, bei jedem das Zeichen seines Landes im Schildrand: Gondor, Lindon, die Dúnedain des Nordens. Hinter dem Banner Eärnils stehen Bogenschützen, klein, ungefähr halb so groß wie die Männer. Ihre Schilde und ihr Banner sind sorgfältig abgemeißelt: Wo das Zeichen ihres Landes stand, ist glatter Stein. Die Gestalten selbst hat man stehen lassen.
 
-**_Extraordinary Success_:** Ein Rest des Randmusters ist erhalten: Blätter und Ähren, Zeichen für das Land im Westen.
+**_Great Success_:** Ein Rest des Randmusters ist erhalten: Blätter und Ähren, Zeichen für das Land im Westen. Unter der leeren Stelle sind Reste einer getilgten Zeile zu erahnen, nur einzelne Wörter: „… soll der Feind im Osten nicht … was in ihnen …“
 
 **Alternative:** Die Gestalten waren Kinder, Troßknechte oder Zwerge, und spätere Steinmetze oder Plünderer haben die Schilde für Metall oder Zierrat abgeschlagen.
 
-### E: Das Lied an der Wand (*Lore*)
+### E: Die kleinen Gräber (*Healing*)
 
-**Fund:** Zwischen den Strichen und Zeichen in der Wand der Wegwacht stehen Verse, in Westron geritzt, kaum lesbar. Es sind nur die Anfangsworte einzelner Zeilen und darüber ein Vermerk: „Nach der Weise von der Höhe“. Wer sich in alten Liedern und Überlieferungen auskennt (*Lore*), erkennt Versmaß und Melodie von Mirabellas Lied wieder, in einer älteren, ernsteren Form.
-
-**_Extraordinary Success_:** Der Held kann die fehlenden Zeilen aus dem Versmaß ergänzen, und sie handeln davon, dass jemand einen Hügel hielt, während die anderen zurückwichen.
-
-**Alternative:** Ein Marschlied der Dúnedain, das der Melodie nur ähnelt, und der Held hört, was er hören will.
-
-### F: Die kleinen Gräber (*Healing*)
-
-**Fund:** Am Rand der Hügelgräber liegen in dichten Reihen über hundert schlichte Gräber, kleiner als die anderen und sorgfältig gepflegt. Die anderen Gräber hier tragen Namen und Zeichen, diese keines. Der Kalkboden hat die Knochen bewahrt, und sie sind klein. Einige tragen die Narben von Fingern, die immer wieder eine Sehne gezogen haben.
+**Fund:** Am Rand der Hügelgräber liegen in dichten Reihen über hundert schlichte Gräber, kleiner als die anderen und sorgfältig in Reihen angelegt. Die anderen Gräber hier tragen Namen und Zeichen, diese keines. Der Kalkboden hat die Knochen bewahrt, und sie sind klein. Einige tragen die Narben von Fingern, die immer wieder eine Sehne gezogen haben.
 
 **Kosten:** Um das zu sehen, müssen die Gräber geöffnet und die Knochen berührt werden, und in Mittelerde stört niemand ungestraft die Ruhe der Toten. Jeder Held, der den Fund macht oder dabei zusieht, erhält 1 *Shadow*-Punkt, unvermeidlich und ohne Wurf, auch wenn die Gräber danach wieder geschlossen werden. Wer vorher geht, bleibt unberührt, ohne den Fund zu kennen.
 
-**_Extraordinary Success_:** Neben vielen Gräbern liegt ein Stein, auf dem jemand vor Jahrzehnten, nicht vor Jahrhunderten, Blumen niedergelegt hat. Jemand pflegt diese Gräber noch.
+**_Great Success_:** Alle Gräber sind gleich ausgerichtet: Die Toten liegen mit dem Kopf im Nordosten und blicken nach Südwesten, dorthin, wo die Heimat lag.
 
 **Alternative:** Kinder aus Bree, die hier gestorben sind, oder Zwerge, oder Menschen von kleinem Wuchs.
 
-### G: Die Zolltafel (*Insight*)
+### F: Der vergessene Pfad (*Travel*)
 
-**Fund:** Neben der Tür ist eine Tafel mit den Zollsätzen des alten Postens in die Wand gemeißelt: so viel für Menschen, Zwerge und Elben, so viel für Pferde, so viel für Wagen. Die letzte Zeile lautet: „Kleine Leute: frei.“ Wer die Tafel mit Verstand liest, bemerkt, dass diese Zeile jünger ist als die übrigen und mit anderem Werkzeug nachgemeißelt wurde. Jemand hat dem Posten befohlen, ein ganzes Volk durchzuwinken, und niemand hat je erklärt, warum.
+**Fund:** Er liegt am *Short Cut* auf der Reise (Teil 2), wo der Hirtenpfad den älteren kreuzt. Wird der *Short Cut* nicht genommen, beginnt der Pfad am Südende der Westhöhe. Es ist ein vergessener Weg, überwachsen und kaum zu sehen, mit Steinhaufen in Dreiergruppen im Abstand eines Tagesmarsches. Hier und da hat jemand einen umgestürzten Haufen wieder aufgesetzt. Er führt vom Schlachtfeld nicht zum Greenway, sondern in gerader Linie nach Südwesten, auf die Brandywine Bridge zu: der Heimweg der Schützen ins Shire, der die Straße und Bree umgeht. Wer ihn mit *Travel* liest, erkennt die Richtung und dass er eigens angelegt wurde. Er folgt Senken und Bachbetten und meidet jede Kuppe und jede Stelle, die man von der Straße oder von einer Anhöhe aus einsehen könnte, als sollte niemand von weitem sehen, wie viele hier zogen.
 
-**_Extraordinary Success_:** Neben der Zeile ist ein kleiner Bogen eingeritzt, so oft mit dem Finger nachgezogen, dass die Kerbe glänzt.
-
-**Alternative:** Ein Zöllner mit Humor, oder eine Regel, damit der Posten für Kinder und Hausierer keine Listen führen muss.
-
-### H: Der vergessene Pfad (*Travel*)
-
-**Fund:** Er liegt am *Short Cut* auf der Reise (Teil 2), wo der Hirtenpfad den älteren kreuzt. Wird der *Short Cut* nicht genommen, beginnt der Pfad am Südende der Westhöhe. Es ist ein vergessener Weg, überwachsen und kaum zu sehen, mit Steinhaufen in Dreiergruppen im Abstand eines Tagesmarsches. Hier und da hat jemand einen umgestürzten Haufen wieder aufgesetzt. Er führt vom Schlachtfeld nicht zum Greenway, sondern in gerader Linie nach Südwesten, auf die Brandywine Bridge zu: der Heimweg der Schützen ins Shire, der die Straße und Bree umgeht. Wer ihn mit *Travel* liest, erkennt die Richtung und dass er eigens angelegt wurde.
-
-**_Extraordinary Success_:** Ein Stein trägt unter dem Moos eine alte Marke: einen Bogen und ein Blatt.
+**_Great Success_:** Ein Stein trägt unter dem Moos eine alte Marke: einen Bogen und ein Blatt.
 
 **Alternative:** Ein Schmugglerpfad, ein alter Schäferweg, ein Pfad der Dúnedain, der anderen Zwecken dient.
 
-### I: Das Schussfeld (*Battle*)
+### G: Das Schussfeld (*Battle*)
 
 **Fund:** Wer das Gelände als Soldat liest, erkennt: Der Bach zwingt ein marschierendes Heer an die Furt, und diese liegt genau im Schussfeld der Westhöhe. Ein Hinterhalt, wie ihn ein erfahrener Kommandant plant, mit Schützen, die man nicht sieht.
 
-**_Extraordinary Success_:** Der Held erkennt, dass die Schützen den Hang sofort danach verlassen haben müssen, sonst wären sie umzingelt worden. Jemand hat ihnen den Rückzug gedeckt.
+**_Great Success_:** Der Held erkennt, dass die Schützen den Hang sofort danach verlassen haben müssen, sonst wären sie umzingelt worden. Jemand hat ihnen den Rückzug gedeckt.
 
 **Alternative:** Ein Zufall der Landschaft. Jeder Bach auf dieser Welt hat eine Furt.
 
-### J: Der Kinderspruch (*Courtesy*)
+### H: Der Kinderspruch (*Courtesy*)
 
 **Fund:** Auf dem Greenway erzählt die Schäferin Gerta (*Journey Event*, Teil 2), von einer Kinderwarnung des Bree-lands: Wer allein in den Wald oder auf die Hügel läuft, den holen „die Kleinen auf der Höhe“, die einen sehen, ohne gesehen zu werden. Ursprung und Grund sind längst vergessen, nur der Spruch hat überdauert. Es ist ein Kinderschreck wie viele, und Gerta hat nie darüber nachgedacht.
 
-**_Extraordinary Success_:** Gerta erinnert sich an einen Reim, den ihre Großmutter manchmal summte und der dieselbe Melodie hat wie Mirabellas Lied.
+**_Great Success_:** Gerta erinnert sich an einen Reim, den ihre Großmutter manchmal summte und der dieselbe Melodie hat wie Mirabellas Lied, mit einer Zeile, die bei Mirabella fehlt: „Fragt dich einer, was sie sind, / sag: Pfeife und Pflug, sonst nichts, mein Kind.“
 
 **Alternative:** Ein Kinderschreck wie viele, der Kinder von Wald, Hügeln und Hügelgräbern fernhalten soll. Mit Hobbits hat er nichts zu tun.
+
+### I: Der Wächter (*Insight*)
+
+**Fund:** Er gehört zu keinem Ort: Die Gefährten sehen den Waldläufer auf der Reise (*Journey Event* „Ein stiller Schatten“), in den Feldern (Teil 4) oder beim Aufbruch (Teil 5). Wer ihn eine Weile beobachtet, statt ihm nachzulaufen, bemerkt, worauf er achtet. Er sieht nicht die Gefährten an. Er sieht an ihnen vorbei, die Straße entlang, die sie gekommen sind, und über die Kuppen ringsum: Er will wissen, ob ihnen jemand folgt. Wer hier wacht, bewacht nicht das Schlachtfeld vor den Gefährten, sondern die Gefährten und ihre Suche vor den Augen eines Dritten.
+
+**_Great Success_:** Wo der Wächter stand, ist das Gras zu einer flachen Mulde getreten, und daneben liegt ein alter Feuerring aus geschwärzten Steinen, tief eingesunken und von Moos überzogen. Auf dieser Kuppe wird seit sehr langer Zeit Wache gestanden.
+
+**Alternative:** Ein Waldläufer, der tut, was Waldläufer auf jeder Straße tun: nach Wegelagerern Ausschau halten. Der Feuerring stammt von Hirten.
 
 ## Anhang: Spurenblatt {#spuren .nonotes}
 
 Ein Blatt für den Spieltisch: Hake ab, was die Gruppe gefunden hat. Die drei Fragen sind die aus Teil 5, die Spalten *1*, *2* und *3* zeigen, wofür ein Hinweis zählt.
 
-| Spur | Ort | Fertigkeit | Gefunden | *Extraordinary Success* | 1 | 2 | 3 |
+| Spur | Ort | Fertigkeit | Gefunden | *Great Success* | 1 | 2 | 3 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **A** Schützenmulden | 3 Westhöhe | *Scan* | [ ] | [ ] | x | x | |
-| **B** Pfeilspitzen | 2 Furt | *Explore* | [ ] | [ ] | x | | |
-| **C** Bronzeschnalle | 3 Westhöhe | *Craft* | [ ] | [ ] | x | | |
-| **D** Relief | 5 Zitadelle | *Lore* oder *Riddle* | [ ] | [ ] | | | x |
-| **E** Lied an der Wand | 1 Wegwacht | *Lore* | [ ] | [ ] | x | | |
-| **F** Kleine Gräber (1 *Shadow*) | 4 Hügelgräber | *Healing* | [ ] | [ ] | | x | x |
-| **G** Zolltafel | 1 Wegwacht | *Insight* | [ ] | [ ] | | x | x |
-| **H** Vergessener Pfad | Reise | *Travel* | [ ] | [ ] | x | | x |
-| **I** Schussfeld | 2 Furt | *Battle* | [ ] | [ ] | | x | |
-| **J** Kinderspruch | Reise | *Courtesy* | [ ] | [ ] | | x | x |
+| **A** Schützenmulden | 2 Westhöhe | *Scan* | [ ] | [ ] | x | x | |
+| **B** Pfeilspitzen | 1 Furt | *Explore* | [ ] | [ ] | x | | |
+| **C** Bronzeschnalle | 2 Westhöhe | *Craft* | [ ] | [ ] | x | | |
+| **D** Relief | 4 Zitadelle | *Lore* oder *Riddle* | [ ] | [ ] | | | x |
+| **E** Kleine Gräber (1 *Shadow*) | 3 Hügelgräber | *Healing* | [ ] | [ ] | | x | x |
+| **F** Vergessener Pfad | Reise | *Travel* | [ ] | [ ] | x | | x |
+| **G** Schussfeld | 1 Furt | *Battle* | [ ] | [ ] | | x | |
+| **H** Kinderspruch | Reise | *Courtesy* | [ ] | [ ] | | x | x |
+| **I** Wächter | Reise oder Felder | *Insight* | [ ] | [ ] | | | x |
 
 **Die drei Fragen:** *1* Waren Hobbits dort? *2* Haben sie etwas bewirkt? *3* Warum hat man geschwiegen, und was sollte geschützt werden?
 
-**Stand:** Hinweise gefunden: ___ von 10. *Skill Points* vergeben: [ ] 1. Hinweis (1) [ ] 3. Hinweis (2) [ ] 6. Hinweis (3). Fragen mit mindestens zwei Hinweisen: [ ] 1 [ ] 2 [ ] 3. Orte besucht: [ ] 1 [ ] 2 [ ] 3 [ ] 4 [ ] 5.
+**Stand:** Hinweise gefunden: ___ von 9. *Skill Points* vergeben: [ ] 1. Hinweis (1) [ ] 3. Hinweis (2) [ ] 6. Hinweis (3). Fragen mit mindestens zwei Hinweisen: [ ] 1 [ ] 2 [ ] 3. Orte besucht: [ ] 1 [ ] 2 [ ] 3 [ ] 4.
 
 ## Anhang: Fundzettel {#fundzettel .nonotes}
 
-Zu jedem Hinweis gibt es einen Zettel für die Spieler. Gib ihn der Gruppe, sobald ein Held den Hinweis gefunden hat: Er hält fest, was die Helden sehen, ohne Deutung und ohne die Alternativerklärung. Den Zusatz eines *Extraordinary Success* liest du dazu vor oder schreibst ihn auf den Zettel. Jeder Zettel erscheint am Ende des Heftes als eigene Handout-Seite zum Ausdrucken.
+Zu jedem Hinweis gibt es einen Zettel für die Spieler. Gib ihn der Gruppe, sobald ein Held den Hinweis gefunden hat: Er hält fest, was die Helden sehen, ohne Deutung und ohne die Alternativerklärung. Den Zusatz eines *Great Success* liest du dazu vor oder schreibst ihn auf den Zettel. Jeder Zettel erscheint am Ende des Heftes als eigene Handout-Seite zum Ausdrucken.
 
 ### A: Die Schützenmulden (Handout)
 
@@ -340,40 +330,34 @@ In einer der Mulden liegt, grün angelaufen, eine kleine Gürtelschnalle aus Bro
 Auf dem Relief in der Seitenhalle ziehen die Heere unter ihren Bannern, bei jedem das Zeichen seines Landes im Schildrand. Hinter dem Banner Eärnils stehen Bogenschützen, klein, ungefähr halb so groß wie die Männer. Ihre Schilde und ihr Banner sind sorgfältig abgemeißelt: Wo das Zeichen ihres Landes stand, ist glatter Stein. [Zitadelle]{.sig}
 :::
 
-### E: Das Lied an der Wand (Handout)
+### E: Die kleinen Gräber (Handout)
 
-::: {.letter #fund-e title="Fundzettel E: Das Lied an der Wand"}
-Zwischen den Strichen und Zeichen in der Wand der Wegwacht stehen Verse in Westron, kaum lesbar. Nur die Anfangsworte einzelner Zeilen sind zu entziffern. Darüber steht ein Vermerk: „Nach der Weise von der Höhe“. [Wegwacht]{.sig}
+::: {.letter #fund-e title="Fundzettel E: Die kleinen Gräber"}
+Am Rand der Hügelgräber liegen in dichten Reihen über hundert schlichte Gräber, kleiner als die anderen und sorgfältig in Reihen angelegt. Die anderen Gräber hier tragen Namen und Zeichen, diese keines. Der Kalkboden hat die Knochen bewahrt, und sie sind klein. Einige tragen die Narben von Fingern, die immer wieder eine Sehne gezogen haben. [Hügelgräber]{.sig}
 :::
 
-### F: Die kleinen Gräber (Handout)
+### F: Der vergessene Pfad (Handout)
 
-::: {.letter #fund-f title="Fundzettel F: Die kleinen Gräber"}
-Am Rand der Hügelgräber liegen in dichten Reihen über hundert schlichte Gräber, kleiner als die anderen und sorgfältig gepflegt. Die anderen Gräber hier tragen Namen und Zeichen, diese keines. Der Kalkboden hat die Knochen bewahrt, und sie sind klein. Einige tragen die Narben von Fingern, die immer wieder eine Sehne gezogen haben. [Hügelgräber]{.sig}
+::: {.letter #fund-f title="Fundzettel F: Der vergessene Pfad"}
+Ein kaum noch sichtbarer Pfad, überwachsen vom Heidekraut. Am Weg stehen Steinhaufen, immer zu dritt, im Abstand eines Tagesmarsches. Hier und da ist ein umgestürzter Haufen wieder aufgesetzt worden. Der Pfad führt nicht zum Greenway, sondern in gerader Linie nach Südwesten, auf die Brandywine Bridge zu. Er folgt Senken und Bachbetten und meidet jede Kuppe. [Downs]{.sig}
 :::
 
-### G: Die Zolltafel (Handout)
+### G: Das Schussfeld (Handout)
 
-::: {.letter #fund-g title="Fundzettel G: Die Zolltafel"}
-Neben der Tür ist eine Tafel mit den Zollsätzen des Postens in die Wand gemeißelt: so viel für Menschen, Zwerge und Elben, so viel für Pferde, so viel für Wagen. Die letzte Zeile lautet: „Kleine Leute: frei.“ Sie ist jünger als die anderen und mit anderem Werkzeug nachgemeißelt. [Wegwacht]{.sig}
-:::
-
-### H: Der vergessene Pfad (Handout)
-
-::: {.letter #fund-h title="Fundzettel H: Der vergessene Pfad"}
-Ein kaum noch sichtbarer Pfad, überwachsen vom Heidekraut. Am Weg stehen Steinhaufen, immer zu dritt, im Abstand eines Tagesmarsches. Hier und da ist ein umgestürzter Haufen wieder aufgesetzt worden. Der Pfad führt nicht zum Greenway, sondern in gerader Linie nach Südwesten, auf die Brandywine Bridge zu. [Downs]{.sig}
-:::
-
-### I: Das Schussfeld (Handout)
-
-::: {.letter #fund-i title="Fundzettel I: Das Schussfeld"}
+::: {.letter #fund-g title="Fundzettel G: Das Schussfeld"}
 Der Bach zwingt ein marschierendes Heer an die Furt, und die Furt liegt genau im Schussfeld der Westhöhe. Wer oben im Gras liegt, sieht jeden, der durchs Wasser watet, und wird selbst nicht gesehen. Es ist ein Hinterhalt, wie ihn ein erfahrener Kommandant plant. [Furt]{.sig}
 :::
 
-### J: Der Kinderspruch (Handout)
+### H: Der Kinderspruch (Handout)
 
-::: {.letter #fund-j title="Fundzettel J: Der Kinderspruch"}
-„Das sagen wir den Kindern: Lauf nicht allein in den Wald und nicht auf die Hügel, da sind die Kleinen auf der Höhe. Die sehen dich, und du siehst sie nicht. Wer sie sind und woher das kommt, weiß keiner mehr.“ [Gerta]{.sig}
+::: {.letter #fund-h title="Fundzettel H: Der Kinderspruch"}
+„Das sagen wir den Kindern: Lauf nicht allein in den Wald und nicht auf die Hügel, da sind die Wesen auf der Höhe. Die sehen dich, und du siehst sie nicht.“ Wer sie sind und woher das kommt, weiß keiner mehr. [Gerta]{.sig}
+:::
+
+### I: Der Wächter (Handout)
+
+::: {.letter #fund-i title="Fundzettel I: Der Wächter"}
+Auf einer Kuppe, einen Bogenschuss entfernt, steht eine Gestalt in grauem Mantel. Sie sieht nicht zu euch herüber. Sie sieht an euch vorbei, die Straße entlang, die ihr gekommen seid, und über die Hügel ringsum. Als ihr auf sie zugeht, ist sie fort. [Downs]{.sig}
 :::
 
 ## Anhang: Wichtige NSCs {#npcs .nonotes}
@@ -382,4 +366,5 @@ Der Bach zwingt ein marschierendes Heer an die Furt, und die Furt liegt genau im
 | --- | --- | --- | --- | --- |
 | **Mirabella Took** | Alte Hobbit-Dame aus Tuckborough | Teil 1 | Beweisen, dass Hobbits mehr sind als Pfeifenraucher und Bauern | Scharf, stolz, streitlustig, nie wehleidig |
 | **Gerta** | Schäferin aus dem Bree-land | Teil 2 | Ihre Ruhe, ein Schwatz, ihre Schafe | Redselig, herzlich, aberglaubensfest |
+| **Der Wächter** | Waldläufer der Dúnedain | Teil 2 oder Teil 4 | Wissen, wer den Gefährten folgt | Stumm, fern, nie zu stellen |
 | **Der Wirt im Pony** | Wirt in Bree | Teil 2 | Seine Gäste bei Laune halten | Lachend, höflich, weiß nichts |

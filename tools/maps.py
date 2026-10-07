@@ -515,8 +515,6 @@ def map_fornost(lm):
     rubble(pen, 1380, 200, 12, 24)
     # Greenway from the south through the gap into the city
     road(pen, [(1100, 1190), (1180, 960), (1250, 780), (1262, 600), (1285, 480), (1296, 380), (1300, 300)], 22)
-    # Wegwacht
-    house(pen, 1215, 610, 52, 34)
     # barrow-field halfway between the battlefield and Fornost
     rnd = random.Random(5)
     for _ in range(13):
@@ -534,7 +532,6 @@ def map_fornost(lm):
     pen.text((1300, 70), "Fornost (Norbury of the Kings)", size=36)
     pen.text((1440, 410), "Deadmen's Dike", size=34)
     pen.text((1330, 800), "Greenway", size=32, rot=80)
-    pen.text((1250, 665), "Wegwacht", size=32)
     pen.text((960, 200), "alte Hügelgräber", size=34)
     pen.text((470, 230), "die Felder", size=44, col=GREY)
     pen.text((640, 790), "Westhöhe", size=32, rot=-80)
@@ -545,9 +542,9 @@ def map_fornost(lm):
     scalebar(pen, "1 Meile", length=300)
     pen.text((680, 1170), "Entfernungen im Feld nicht maßstäblich", size=24, col=GREY, halo=False)
     if lm:
-        # the forgotten path (hint H): ridge straight towards the Brandywine Bridge, crossed by the Hirtenpfad
+        # the forgotten path (hint F): ridge straight towards the Brandywine Bridge, crossed by the Hirtenpfad
         pen.dashed([(560, 740), (500, 900), (430, 1050), (360, 1190)], w=3)
-        pen.text((420, 960), "vergessener Pfad (H)", size=26, col=RED, rot=70)
+        pen.text((420, 960), "vergessener Pfad (F)", size=26, col=RED, rot=70)
         pen.text((300, 1100), "zur Brandywine Bridge", size=24, col=RED, rot=70)
         pen.dashed([(1060, 1100), (900, 1030), (700, 960), (520, 880), (450, 760)], w=2, col=GREY, dash=8, gap=10)
         pen.text((960, 1085), "Hirtenpfad (Short Cut)", size=26, col=GREY, halo=False)
@@ -561,64 +558,20 @@ def map_fornost(lm):
         pen.arrow([(640, 450), (686, 500)], w=2, col=RED, head=9)
         pen.arrow([(640, 500), (686, 530)], w=2, col=RED, head=9)
         pen.arrow([(640, 560), (686, 540)], w=2, col=RED, head=9)
-        # the little graves at the west rim of the barrow-field (hint F)
+        # the little graves at the west rim of the barrow-field (hint E)
         for i in range(4):
             pen.rect(832 + i * 14, 392, 842 + i * 14, 402, fill=(205, 194, 168), outline=INK, w=1.2, amp=0.2)
             pen.rect(832 + i * 14, 408, 842 + i * 14, 418, fill=(205, 194, 168), outline=INK, w=1.2, amp=0.2)
-        pen.text((850, 445), "kleine Gräber (F)", size=24, col=RED)
-        for (mx, my), n, hints in (((1150, 590), 1, "E, G"), ((760, 560), 2, "B, I"), ((540, 330), 3, "A, C, (H)"),
-                                    ((960, 280), 4, "F"), ((1300, 235), 5, "D")):
+        pen.text((850, 445), "kleine Gräber (E)", size=24, col=RED)
+        for (mx, my), n, hints in (((760, 560), 1, "B, G"), ((540, 330), 2, "A, C, (F)"),
+                                    ((960, 280), 3, "E"), ((1300, 235), 4, "D")):
             pen.marker((mx, my), n)
             pen.text((mx, my + 38), hints, size=28, col=RED)
-        pen.text((850, 1150), "H, J auf der Reise", size=26, col=RED)
+        pen.text((850, 1150), "F, H auf der Reise", size=26, col=RED)
     return bg
 
 
-def map_wegwacht(lm):
-    seed = 13
-    bg = parchment(seed)
-    plan = Plan(seed)
-    plan.rect(320, 420, 780, 740)           # Wohnraum
-    plan.rect(780, 500, 1020, 740)          # Vorratsraum
-    plan.rect(320, 260, 560, 420)           # eingestürzter Anbau
-    plan.corridor([(540, 740), (540, 960)], 60)   # Eingang und Greenway
-    plan.paint(bg)
-    pen = Pen(bg, seed)
-    frame(pen)
-    # slits in the south wall: the toll keepers watched the road
-    for x in (400, 650, 900):
-        pen.rect(x - 14, 734, x + 14, 746, fill=INK, outline=INK, w=1)
-    pen.text((900, 780), "Schießscharten nach Süden", size=26, col=GREY, halo=False)
-    # fireplace on the west wall
-    pen.rect(322, 540, 372, 600, fill=(120, 108, 98), outline=INK, w=2.4)
-    pen.d.polygon([sc(p) for p in [(347, 556), (358, 574), (352, 590), (342, 590), (336, 574)]], fill=(184, 98, 52))
-    # bench under the window and stacked wood
-    seat(pen, 650, 705, "n", 0.9)
-    seat(pen, 730, 705, "n", 0.9)
-    for i in range(4):
-        pen.rect(440 + i * 30, 440, 466 + i * 30, 470, fill=(214, 190, 150), outline=INK, w=1.6, amp=0.3)
-    pen.text((650, 600), "Wohnraum", size=44)
-    pen.text((900, 620), "Nebenraum", size=40)
-    pen.text((440, 340), "eingestürzter Anbau", size=34)
-    rubble(pen, 480, 300, 22, 50)
-    pen.text((540, 900), "Greenway", size=34, rot=90)
-    cartouche(pen, "Die Wegwacht", "Ort 1 in Teil 4")
-    compass(pen)
-    scalebar(pen, "5 Schritt", length=200)
-    if lm:
-        pen.marker((600, 500), 1)
-        # tally marks and verses on the east wall (hint E)
-        for i in range(10):
-            pen.line([(776, 560 + i * 12), (770, 560 + i * 12 + 8)], w=1.6, col=RED, amp=0.2)
-        pen.text((680, 452), "geritzte Verse (E)", size=26, col=RED)
-        pen.line([(762, 462), (776, 520)], w=2, col=RED)
-        # toll tablet beside the door (hint G)
-        pen.rect(436, 728, 496, 748, fill=(220, 190, 170), outline=RED, w=2)
-        pen.text((380, 790), "Zolltafel (G)", size=26, col=RED)
-    return bg
-
-
-MAPS = {"example": map_example, "fornost": map_fornost, "wegwacht": map_wegwacht}
+MAPS = {"example": map_example, "fornost": map_fornost}
 
 
 def render(name, lm):

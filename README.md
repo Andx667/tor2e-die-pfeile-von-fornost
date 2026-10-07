@@ -6,12 +6,12 @@ and one companion (Dwarf, Man or Elf) who is also their bodyguard.
 **The pitch.** The Prologue of the Red Book says that Hobbit archers from the Shire helped the king at the battle
 of Fornost (TA 1975). Men and Elves do not know of it, or deny it. In autumn TA 2951 the old Took Mirabella wants
 proof that Hobbits are more than pipe-smokers and farmers. The Company searches the fields west of Fornost for
-traces that survived a thousand years: iron, bronze, stone and earthworks. They find ten possible clues, enough
+traces that survived a thousand years: iron, bronze, stone and earthworks. They find nine possible clues, enough
 to conclude that the Hobbits were there, that they mattered and that their part was kept quiet on purpose, but
 nobody ever confirms it.
 
 - Warm and curious, with one dangerous place (a barrow-wight) that has nothing to do with the clues.
-- A sandbox: five locations in any order, ten clues (A–J) of which the Loremaster picks the ones to use.
+- A sandbox: four locations in any order, nine clues (A–I) of which the Loremaster picks the ones to use.
 - *Skill Points* for the journey and for the 1st, 3rd and 6th clue found (1, 2 and 3 points). No *Fellowship Phase*.
 - Written for experienced Loremasters: no stat blocks, the *Core Rules* provide them.
 
@@ -24,10 +24,10 @@ tagged commits (`v*`) are published as a release.
 | --- | --- |
 | `adventure.toml` | Title, language, credit |
 | `src/adventure.md` | The adventure text (Pandoc Markdown) |
-| `src/maps.toml` | Maps in the appendix: the region around Fornost and the waystation |
+| `src/maps.toml` | Map in the appendix: the region around Fornost |
 | `src/cards.toml` | Item cards (none in this adventure) |
 | `assets/maps/` | Loremaster and player versions of the maps |
-| `tools/maps.py` | Map drawing code (`python3 tools/maps.py fornost wegwacht`) |
+| `tools/maps.py` | Map drawing code (`python3 tools/maps.py fornost`) |
 | `tools/build.py` | PDF build |
 | `latex/`, `filters/tor2e.lua` | Layout and Pandoc filter |
 
